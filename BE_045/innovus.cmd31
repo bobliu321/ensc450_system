@@ -1,0 +1,70 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Apr 19 23:00:46 2021                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+#@(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+#@(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+#@(#)CDS: CPE v18.10-p005
+#@(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+set conf_qxconf_file NULL
+set conf_qxlib_file NULL
+set defHierChar /
+set distributed_client_message_echo 1
+set distributed_mmmc_disable_reports_auto_redirection 0
+set enc_enable_print_mode_command_reset_options 1
+set init_gnd_net VSS
+set init_lef_file {/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ../syn_045/lib/aesbuffer.lef ../vhdl/SRAM_Lib/SRAM.lef}
+set init_mmmc_file ensc450.view
+set init_pwr_net VDD
+set init_top_cell ensc450
+set init_verilog inputs/ensc450.ref.v
+set latch_time_borrow_mode max_borrow
+set pegDefaultResScaleFactor 1
+set pegDetailResScaleFactor 1
+set report_inactive_arcs_format {from to when arc_type sense reason}
+set soft_stack_size_limit 31
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+set timing_enable_default_delay_arc 1
+init_design
+set defOutLefVia 1
+set lefDefOutVersion 5.5
+floorPlan -d 350 350 10 10 10 10
+setPlaceMode -fp true
+place_design
+selectInst my_aes
+setObjFPlanBox Instance my_aes 24.585 163.3855 192.735 331.1055
+setObjFPlanBox Instance my_aes 20.2775 161.539 188.4275 329.259
+deselectAll
+selectInst my_Mem
+uiSetTool move
+setObjFPlanBox Instance my_Mem 21.0735 20.0955 143.0735 142.0955
+addHaloToBlock {0.05 0.05 0.05 0.05} -fromInstBox -allMacro
+setPlaceMode -fp true
+place_design
+editPin -fixedPin 1 -snap TRACK -side Top -unit TRACK -layer 2 -spreadType center -spacing 5.0 -pin {resetn clk {EXT_ADDRBUS[0]} {EXT_ADDRBUS[1]} {EXT_ADDRBUS[2]} {EXT_ADDRBUS[3]} {EXT_ADDRBUS[4]} {EXT_ADDRBUS[5]} {EXT_ADDRBUS[6]} {EXT_ADDRBUS[7]} {EXT_ADDRBUS[8]} {EXT_ADDRBUS[9]} {EXT_ADDRBUS[10]} {EXT_ADDRBUS[11]} {EXT_ADDRBUS[12]} {EXT_ADDRBUS[13]} {EXT_ADDRBUS[14]} {EXT_ADDRBUS[15]} {EXT_ADDRBUS[16]} {EXT_ADDRBUS[17]} {EXT_ADDRBUS[18]} {EXT_ADDRBUS[19]} {EXT_ADDRBUS[20]} {EXT_ADDRBUS[21]} {EXT_ADDRBUS[22]} {EXT_ADDRBUS[23]} {EXT_ADDRBUS[24]} {EXT_ADDRBUS[25]} {EXT_ADDRBUS[26]} {EXT_ADDRBUS[27]} {EXT_ADDRBUS[28]} {EXT_ADDRBUS[29]} {EXT_ADDRBUS[30]} {EXT_ADDRBUS[31]} EXT_MR EXT_MW {EXT_WDATABUS[0]} {EXT_WDATABUS[1]} {EXT_WDATABUS[2]} {EXT_WDATABUS[3]} {EXT_WDATABUS[4]} {EXT_WDATABUS[5]} {EXT_WDATABUS[6]} {EXT_WDATABUS[7]} {EXT_WDATABUS[8]} {EXT_WDATABUS[9]} {EXT_WDATABUS[10]} {EXT_WDATABUS[11]} {EXT_WDATABUS[12]} {EXT_WDATABUS[13]} {EXT_WDATABUS[14]} {EXT_WDATABUS[15]} {EXT_WDATABUS[16]} {EXT_WDATABUS[17]} {EXT_WDATABUS[18]} {EXT_WDATABUS[19]} {EXT_WDATABUS[20]} {EXT_WDATABUS[21]} {EXT_WDATABUS[22]} {EXT_WDATABUS[23]} {EXT_WDATABUS[24]} {EXT_WDATABUS[25]} {EXT_WDATABUS[26]} {EXT_WDATABUS[27]} {EXT_WDATABUS[28]} {EXT_WDATABUS[29]} {EXT_WDATABUS[30]} {EXT_WDATABUS[31]} EXT_BUSY}
+editPin -fixedPin 1 -snap TRACK -side Right -use TIELOW -unit TRACK -layer 2 -spreadType center -spacing 10.0 -pin {EXT_NREADY {EXT_RDATABUS[0]} {EXT_RDATABUS[1]} {EXT_RDATABUS[2]} {EXT_RDATABUS[3]} {EXT_RDATABUS[4]} {EXT_RDATABUS[5]} {EXT_RDATABUS[6]} {EXT_RDATABUS[7]} {EXT_RDATABUS[8]} {EXT_RDATABUS[9]} {EXT_RDATABUS[10]} {EXT_RDATABUS[11]} {EXT_RDATABUS[12]} {EXT_RDATABUS[13]} {EXT_RDATABUS[14]} {EXT_RDATABUS[15]} {EXT_RDATABUS[16]} {EXT_RDATABUS[17]} {EXT_RDATABUS[18]} {EXT_RDATABUS[19]} {EXT_RDATABUS[20]} {EXT_RDATABUS[21]} {EXT_RDATABUS[22]} {EXT_RDATABUS[23]} {EXT_RDATABUS[24]} {EXT_RDATABUS[25]} {EXT_RDATABUS[26]} {EXT_RDATABUS[27]} {EXT_RDATABUS[28]} {EXT_RDATABUS[29]} {EXT_RDATABUS[30]} {EXT_RDATABUS[31]}}
+addRing -nets {VDD VSS} -width 0.6 -spacing 0.5 -layer {top 7 bottom 7 left 6 right 6}
+addStripe -nets {VSS VDD} -layer 6 -direction vertical -width 0.8 -spacing 5.0 -set_to_set_distance 20
+addStripe -nets {VSS VDD} -layer 7 -direction horizontal -width 0.8 -spacing 5.0 -set_to_set_distance 20
+globalNetConnect -pin VDD -type pgpin -pin VDD -all

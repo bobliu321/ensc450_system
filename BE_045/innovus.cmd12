@@ -1,0 +1,219 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Apr 18 22:23:05 2021                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+#@(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+#@(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+#@(#)CDS: CPE v18.10-p005
+#@(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+set conf_qxconf_file NULL
+set conf_qxlib_file NULL
+set defHierChar /
+set distributed_client_message_echo 1
+set distributed_mmmc_disable_reports_auto_redirection 0
+set enc_enable_print_mode_command_reset_options 1
+set init_gnd_net VSS
+set init_lef_file {/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ../syn_045/lib/aesbuffer.lef ../vhdl/SRAM_Lib/SRAM.lef}
+set init_mmmc_file ensc450.view
+set init_pwr_net VDD
+set init_top_cell ensc450
+set init_verilog inputs/ensc450.ref.v
+set latch_time_borrow_mode max_borrow
+set pegDefaultResScaleFactor 1
+set pegDetailResScaleFactor 1
+set report_inactive_arcs_format {from to when arc_type sense reason}
+set soft_stack_size_limit 31
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+set timing_enable_default_delay_arc 1
+init_design
+setPlaceMode -fp true
+place_design
+zoomIn
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+zoomIn
+zoomIn
+zoomIn
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+fit
+zoomIn
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+zoomIn
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+zoomOut
+panPage 0 1
+panPage 1 0
+zoomOut
+panPage 0 1
+selectInst my_Mem
+deselectAll
+selectInst my_aes
+gui_select -rect {165.823 189.775 154.081 193.824}
+deselectAll
+selectInst my_aes
+gui_select -rect {125.331 220.954 77.550 239.581}
+gui_select -rect {156.915 192.609 63.378 225.813}
+gui_select -rect {154.081 187.750 12.357 217.715}
+gui_select -rect {149.221 182.891 18.026 209.616}
+deselectAll
+selectInst my_aes
+uiSetTool moveWire
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+deselectAll
+selectInst my_aes
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+deselectAll
+selectInst my_aes
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+deselectAll
+selectInst my_aes
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+deselectAll
+selectInst my_aes
+uiSetTool select
+deselectAll
+selectInst my_aes
+gui_select -rect {127.356 204.757 74.716 224.194}
+deselectAll
+selectInst My_DMA/U509
+deselectAll
+selectInst My_DMA/sub_117_S2_aco/U39
+deselectAll
+selectInst My_DMA/sub_117_S2_aco/U35
+deselectAll
+selectInst {My_DMA/count_reg_reg[19]}
+deselectAll
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 2 0.696845 0.0 0.0 0.0 0.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -d 400 400 0.0 0.0 0.0 0.0
+uiSetTool select
+getIoFlowFlag
+fit
+getIoFlowFlag
+floorPlan -d 400 400 50 50 50 50
+floorPlan -d 400 400 20 20 20 20
+setPlaceMode -fp true
+place_design
+selectInst my_aes
+gui_select -rect {94.442 325.830 285.202 126.455}
+gui_select -rect {231.666 287.062 238.435 283.370}
+panPage 0 1
+panPage 0 -1
+deselectAll
+selectInst my_aes
+deselectAll
+selectInst my_aes
+deselectAll
+selectInst my_aes
+deselectAll
+selectInst my_Mem
+deselectAll
+selectInst my_aes
+panPage 1 0
+panPage -1 0
+uiSetTool move
+setObjFPlanBox Instance my_aes 203.075 205.2615 371.225 372.9815
+setObjFPlanBox Instance my_aes 25.2375 26.192 193.3875 193.912
+deselectAll
+selectInst my_Mem
+setObjFPlanBox Instance my_Mem 198.7975 200.8355 320.7975 322.8355
+floorPlan -d 300 300 20 20 20 20
+setObjFPlanBox Instance my_Mem 155.8235 157.639 277.8235 279.639
+floorPlan -d 350 350 20 20 20 20
+deselectAll
+selectInst my_aes
+setObjFPlanBox Instance my_aes 28.2375 28.129 196.3875 195.849
+deselectAll
+selectInst my_Mem
+setObjFPlanBox Instance my_Mem 198.3535 200.2855 320.3535 322.2855
+deselectAll
+selectInst my_aes
+setObjFPlanBox Instance my_aes 27.004 26.8995 195.154 194.6195
+setObjFPlanBox Instance my_aes 22.6975 24.439 190.8475 192.159
+setObjFPlanBox Instance my_aes 25.1565 27.5165 193.3065 195.2365
+setObjFPlanBox Instance my_aes 25.155 157.3545 193.305 325.0745
+deselectAll
+selectInst my_Mem
+setObjFPlanBox Instance my_Mem 202.6625 23.6785 324.6625 145.6785
+setObjFPlanBox Instance my_Mem 26.0535 24.9105 148.0535 146.9105
+setObjFPlanBox Instance my_Mem 31.593 24.91 153.593 146.91
+uiSetTool select
+deselectAll
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+floorPlan -d 350 350 10 10 10 10
+selectInst my_Mem
+uiSetTool move
+setObjFPlanBox Instance my_Mem 21.0735 20.0955 143.0735 142.0955
+deselectAll
+selectInst my_aes
+setObjFPlanBox Instance my_aes 24.585 163.3855 192.735 331.1055
+setObjFPlanBox Instance my_aes 20.2775 161.539 188.4275 329.259
+setPlaceMode -fp true
+place_design
+man <globalNetConnect>
+man <globalConnect>

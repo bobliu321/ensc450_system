@@ -1,0 +1,19 @@
+catch { setDesignMode -process 45 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.1
+catch { setCTSMode -engine ck }
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+
+catch { setPlaceMode -place_design_floorplan_mode true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

@@ -1,0 +1,808 @@
+[04/19 00:40:57      0s] 
+[04/19 00:40:57      0s] Cadence Innovus(TM) Implementation System.
+[04/19 00:40:57      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/19 00:40:57      0s] 
+[04/19 00:40:57      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[04/19 00:40:57      0s] Options:	
+[04/19 00:40:57      0s] Date:		Mon Apr 19 00:40:57 2021
+[04/19 00:40:57      0s] Host:		ensc-esil-01 (x86_64 w/Linux 3.10.0-1127.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz 8192KB)
+[04/19 00:40:57      0s] OS:		CentOS Linux release 7.8.2003 (Core)
+[04/19 00:40:57      0s] 
+[04/19 00:40:57      0s] License:
+[04/19 00:40:58      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[04/19 00:40:58      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/19 00:41:01      0s] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libddbase_sh.so: undefined symbol: _ZTIN12OpenAccess_419oaVersionedObserverINS_12oaLibDefListELj1EEE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[04/19 00:41:16      9s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[04/19 00:41:16      9s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[04/19 00:41:16      9s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[04/19 00:41:16      9s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[04/19 00:41:16      9s] @(#)CDS: CPE v18.10-p005
+[04/19 00:41:16      9s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[04/19 00:41:16      9s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[04/19 00:41:16      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[04/19 00:41:16      9s] @(#)CDS: RCDB 11.13
+[04/19 00:41:16      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_11551_ensc-esil-01_escmc27_eESVor.
+
+[04/19 00:41:16      9s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[04/19 00:41:17     10s] 
+[04/19 00:41:17     10s] **INFO:  MMMC transition support version v31-84 
+[04/19 00:41:17     10s] 
+[04/19 00:41:17     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/19 00:41:17     10s] <CMD> suppressMessage ENCEXT-2799
+[04/19 00:41:18     10s] <CMD> win
+[04/19 00:57:21    104s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/19 00:57:21    104s] <CMD> suppressMessage ENCEXT-2799
+[04/19 00:57:21    104s] <CMD> win
+[04/19 00:57:21    104s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[04/19 00:57:21    104s] <CMD> set conf_qxconf_file NULL
+[04/19 00:57:21    104s] <CMD> set conf_qxlib_file NULL
+[04/19 00:57:21    104s] <CMD> set defHierChar /
+[04/19 00:57:21    104s] <CMD> set distributed_client_message_echo 1
+[04/19 00:57:21    104s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[04/19 00:57:21    104s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[04/19 00:57:21    104s] <CMD> set init_gnd_net VSS
+[04/19 00:57:21    104s] <CMD> set init_lef_file {/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ../syn_045/lib/aesbuffer.lef ../vhdl/SRAM_Lib/SRAM.lef}
+[04/19 00:57:21    104s] <CMD> set init_mmmc_file ensc450.view
+[04/19 00:57:21    104s] <CMD> set init_pwr_net VDD
+[04/19 00:57:21    104s] <CMD> set init_top_cell ensc450
+[04/19 00:57:21    104s] <CMD> set init_verilog inputs/ensc450.ref.v
+[04/19 00:57:21    104s] <CMD> set latch_time_borrow_mode max_borrow
+[04/19 00:57:21    104s] <CMD> set pegDefaultResScaleFactor 1
+[04/19 00:57:21    104s] <CMD> set pegDetailResScaleFactor 1
+[04/19 00:57:21    104s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[04/19 00:57:21    104s] <CMD> set soft_stack_size_limit 31
+[04/19 00:57:21    104s] <CMD> suppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> suppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/19 00:57:21    104s] <CMD> suppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/19 00:57:21    104s] <CMD> suppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/19 00:57:21    104s] <CMD> set timing_enable_default_delay_arc 1
+[04/19 00:57:21    104s] <CMD> init_design
+[04/19 00:57:21    104s] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+#% Begin Load MMMC data ... (date=04/19 00:57:21, mem=412.0M)
+[04/19 00:57:21    104s] #% End Load MMMC data ... (date=04/19 00:57:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=412.1M, current mem=412.1M)
+[04/19 00:57:21    104s] 
+[04/19 00:57:21    104s] Loading LEF file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ...
+[04/19 00:57:21    104s] Set DBUPerIGU to M2 pitch 380.
+[04/19 00:57:21    104s] 
+[04/19 00:57:21    104s] Loading LEF file ../syn_045/lib/aesbuffer.lef ...
+[04/19 00:57:21    104s] 
+[04/19 00:57:21    104s] Loading LEF file ../vhdl/SRAM_Lib/SRAM.lef ...
+[04/19 00:57:21    104s] 
+[04/19 00:57:21    104s] viaInitial starts at Mon Apr 19 00:57:21 2021
+viaInitial ends at Mon Apr 19 00:57:21 2021
+Loading view definition file from ensc450.view
+[04/19 00:57:21    104s] Reading nangate45nm_ls timing library '/ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib' ...
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/19 00:57:21    104s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/19 00:57:22    104s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[04/19 00:57:22    104s] Reading nangate45nm_ls timing library '/local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/AES_Lib/aesbuffer_slow.lib' ...
+[04/19 00:57:22    104s] Read 1 cells in library 'aesbuffer' 
+[04/19 00:57:22    104s] Reading nangate45nm_ls timing library '/local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/SRAM_Lib/SRAM.lib' ...
+[04/19 00:57:22    104s] **WARN: (TECHLIB-1177):	'index_2' defined in 'lu_table_template' group should have at least '2' float values. This may lead to undesirable analysis results. (File /local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/SRAM_Lib/SRAM.lib, Line 37)
+[04/19 00:57:22    104s] Read 1 cells in library 'SRAM' 
+[04/19 00:57:22    104s] *** End library_loading (cpu=0.00min, real=0.02min, mem=26.8M, fe_cpu=1.75min, fe_real=16.42min, fe_mem=592.0M) ***
+[04/19 00:57:22    104s] #% Begin Load netlist data ... (date=04/19 00:57:22, mem=429.2M)
+[04/19 00:57:22    104s] *** Begin netlist parsing (mem=592.0M) ***
+[04/19 00:57:22    104s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'SRAM' is defined in LEF but not in the timing library.
+[04/19 00:57:22    104s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'SRAM' is defined in LEF but not in the timing library.
+[04/19 00:57:22    104s] Created 136 new cells from 3 timing libraries.
+[04/19 00:57:22    104s] Reading netlist ...
+[04/19 00:57:22    104s] Backslashed names will retain backslash and a trailing blank character.
+[04/19 00:57:22    104s] Reading verilog netlist 'inputs/ensc450.ref.v'
+[04/19 00:57:22    104s] 
+[04/19 00:57:22    104s] *** Memory Usage v#1 (Current mem = 594.039M, initial mem = 251.465M) ***
+[04/19 00:57:22    104s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=594.0M) ***
+[04/19 00:57:22    104s] #% End Load netlist data ... (date=04/19 00:57:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=435.5M, current mem=435.5M)
+[04/19 00:57:22    104s] Set top cell to ensc450.
+[04/19 00:57:23    104s] Hooked 136 DB cells to tlib cells.
+[04/19 00:57:23    104s] Starting recursive module instantiation check.
+[04/19 00:57:23    104s] No recursion found.
+[04/19 00:57:23    104s] Building hierarchical netlist for Cell ensc450 ...
+[04/19 00:57:23    105s] *** Netlist is unique.
+[04/19 00:57:23    105s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[04/19 00:57:23    105s] ** info: there are 151 modules.
+[04/19 00:57:23    105s] ** info: there are 3079 stdCell insts.
+[04/19 00:57:23    105s] ** info: there are 2 macros.
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] *** Memory Usage v#1 (Current mem = 631.465M, initial mem = 251.465M) ***
+[04/19 00:57:23    105s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] Set Default Net Delay as 1000 ps.
+[04/19 00:57:23    105s] Set Default Net Load as 0.5 pF. 
+[04/19 00:57:23    105s] Set Default Input Pin Transition as 0.1 ps.
+[04/19 00:57:23    105s] Extraction setup Started 
+[04/19 00:57:23    105s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/19 00:57:23    105s] Reading Capacitance Table File /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl ...
+[04/19 00:57:23    105s] Cap table was created using Encounter 08.10-p004_1.
+[04/19 00:57:23    105s] Process name: master_techFreePDK45.
+[04/19 00:57:23    105s] Importing multi-corner RC tables ... 
+[04/19 00:57:23    105s] Summary of Active RC-Corners : 
+[04/19 00:57:23    105s]  
+[04/19 00:57:23    105s]  Analysis View: ensc450_av
+[04/19 00:57:23    105s]     RC-Corner Name        : nangate45nm_caps
+[04/19 00:57:23    105s]     RC-Corner Index       : 0
+[04/19 00:57:23    105s]     RC-Corner Temperature : 125 Celsius
+[04/19 00:57:23    105s]     RC-Corner Cap Table   : '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl'
+[04/19 00:57:23    105s]     RC-Corner PreRoute Res Factor         : 1
+[04/19 00:57:23    105s]     RC-Corner PreRoute Cap Factor         : 1
+[04/19 00:57:23    105s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/19 00:57:23    105s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/19 00:57:23    105s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/19 00:57:23    105s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/19 00:57:23    105s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/19 00:57:23    105s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/19 00:57:23    105s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/19 00:57:23    105s] Updating RC grid for preRoute extraction ...
+[04/19 00:57:23    105s] Initializing multi-corner capacitance tables ... 
+[04/19 00:57:23    105s] Initializing multi-corner resistance tables ...
+[04/19 00:57:23    105s] *Info: initialize multi-corner CTS.
+[04/19 00:57:23    105s] Reading timing constraints file 'inputs/ensc450.sdc' ...
+[04/19 00:57:23    105s] Current (total cpu=0:01:45, real=0:16:26, peak res=571.3M, current mem=571.3M)
+[04/19 00:57:23    105s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/ensc450.sdc, Line 8).
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File inputs/ensc450.sdc, Line 44).
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] INFO (CTE): Reading of timing constraints file inputs/ensc450.sdc completed, with 2 WARNING
+[04/19 00:57:23    105s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=610.4M, current mem=610.4M)
+[04/19 00:57:23    105s] Current (total cpu=0:01:45, real=0:16:26, peak res=610.4M, current mem=610.4M)
+[04/19 00:57:23    105s] Creating Cell Server ...(0, 1, 1, 1)
+[04/19 00:57:23    105s] Summary for sequential cells identification: 
+[04/19 00:57:23    105s]   Identified SBFF number: 16
+[04/19 00:57:23    105s]   Identified MBFF number: 0
+[04/19 00:57:23    105s]   Identified SB Latch number: 0
+[04/19 00:57:23    105s]   Identified MB Latch number: 0
+[04/19 00:57:23    105s]   Not identified SBFF number: 0
+[04/19 00:57:23    105s]   Not identified MBFF number: 0
+[04/19 00:57:23    105s]   Not identified SB Latch number: 0
+[04/19 00:57:23    105s]   Not identified MB Latch number: 0
+[04/19 00:57:23    105s]   Number of sequential cells which are not FFs: 13
+[04/19 00:57:23    105s] Total number of combinational cells: 99
+[04/19 00:57:23    105s] Total number of sequential cells: 29
+[04/19 00:57:23    105s] Total number of tristate cells: 6
+[04/19 00:57:23    105s] Total number of level shifter cells: 0
+[04/19 00:57:23    105s] Total number of power gating cells: 0
+[04/19 00:57:23    105s] Total number of isolation cells: 0
+[04/19 00:57:23    105s] Total number of power switch cells: 0
+[04/19 00:57:23    105s] Total number of pulse generator cells: 0
+[04/19 00:57:23    105s] Total number of always on buffers: 0
+[04/19 00:57:23    105s] Total number of retention cells: 0
+[04/19 00:57:23    105s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[04/19 00:57:23    105s] Total number of usable buffers: 9
+[04/19 00:57:23    105s] List of unusable buffers:
+[04/19 00:57:23    105s] Total number of unusable buffers: 0
+[04/19 00:57:23    105s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[04/19 00:57:23    105s] Total number of usable inverters: 6
+[04/19 00:57:23    105s] List of unusable inverters:
+[04/19 00:57:23    105s] Total number of unusable inverters: 0
+[04/19 00:57:23    105s] List of identified usable delay cells:
+[04/19 00:57:23    105s] Total number of identified usable delay cells: 0
+[04/19 00:57:23    105s] List of identified unusable delay cells:
+[04/19 00:57:23    105s] Total number of identified unusable delay cells: 0
+[04/19 00:57:23    105s] Creating Cell Server, finished. 
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/19 00:57:23    105s] Deleting Cell Server ...
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] *** Summary of all messages that are not suppressed in this session:
+[04/19 00:57:23    105s] Severity  ID               Count  Summary                                  
+[04/19 00:57:23    105s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+[04/19 00:57:23    105s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/19 00:57:23    105s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/19 00:57:23    105s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/19 00:57:23    105s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/19 00:57:23    105s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/19 00:57:23    105s] WARNING   TECHLIB-1177         1  'index_%d' defined in '%s' group should ...
+[04/19 00:57:23    105s] *** Message Summary: 25 warning(s), 2 error(s)
+[04/19 00:57:23    105s] 
+[04/19 00:57:23    105s] <CMD> set defOutLefVia 1
+[04/19 00:57:23    105s] <CMD> set lefDefOutVersion 5.5
+[04/19 00:57:23    105s] <CMD> floorPlan -d 350 350 10 10 10 10
+[04/19 00:57:23    105s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 10.070000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/19 00:57:23    105s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 9.940000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/19 00:57:23    105s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 10.070000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/19 00:57:23    105s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 9.940000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/19 00:57:23    105s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/19 00:57:23    105s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[04/19 00:57:23    105s] <CMD> setPlaceMode -fp true
+[04/19 00:57:23    105s] <CMD> place_design
+[04/19 00:57:23    105s] [check_scan_connected]: number of scan connected with missing definition = 0, number of scan = 0, number of sequential = 407, percentage of missing scan cell = 0.00% (0 / 407)
+[04/19 00:57:24    105s] *** Starting placeDesign default flow ***
+[04/19 00:57:24    105s] *** Start deleteBufferTree ***
+[04/19 00:57:24    105s] Info: Detect buffers to remove automatically.
+[04/19 00:57:24    105s] Analyzing netlist ...
+[04/19 00:57:24    105s] Updating netlist
+[04/19 00:57:24    105s] AAE DB initialization (MEM=841.051 CPU=0:00:00.1 REAL=0:00:00.0) 
+[04/19 00:57:24    105s] siFlow : Timing analysis mode is single, using late cdB files
+[04/19 00:57:24    105s] Start AAE Lib Loading. (MEM=841.051)
+[04/19 00:57:24    105s] End AAE Lib Loading. (MEM=861.129 CPU=0:00:00.0 Real=0:00:00.0)
+[04/19 00:57:24    105s] 
+[04/19 00:57:24    105s] *summary: 39 instances (buffers/inverters) removed
+[04/19 00:57:24    105s] *** Finish deleteBufferTree (0:00:00.3) ***
+[04/19 00:57:24    105s] Enhanced MH flow has been turned off for floorplan mode.
+[04/19 00:57:24    105s] Deleted 0 physical inst  (cell - / prefix -).
+[04/19 00:57:24    105s] **WARN: (IMPSP-157):	Macro 'my_Mem' is not placed within core boundary.
+[04/19 00:57:24    105s] Type 'man IMPSP-157' for more detail.
+[04/19 00:57:24    105s] **WARN: (IMPSP-157):	Macro 'my_aes' is not placed within core boundary.
+[04/19 00:57:24    105s] Type 'man IMPSP-157' for more detail.
+[04/19 00:57:24    105s] Extracting standard cell pins and blockage ...... 
+[04/19 00:57:24    105s] Pin and blockage extraction finished
+[04/19 00:57:24    105s] Extracting macro/IO cell pins and blockage ...... 
+[04/19 00:57:24    105s] Pin and blockage extraction finished
+[04/19 00:57:24    105s] *** Starting "NanoPlace(TM) placement v#1 (mem=861.1M)" ...
+[04/19 00:57:24    105s] No user-set net weight.
+[04/19 00:57:24    105s] no activity file in design. spp won't run.
+[04/19 00:57:24    105s] Options: clkGateAware ignoreScan pinGuide congEffort=low gpeffort=fp 
+[04/19 00:57:24    105s] Scan chains were not defined.
+[04/19 00:57:24    105s] #std cell=3040 (0 fixed + 3040 movable) #block=2 (2 floating + 0 preplaced)
+[04/19 00:57:24    105s] #ioInst=0 #net=3516 #term=11439 #term/net=3.25, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=102
+[04/19 00:57:24    105s] stdCell: 3040 single + 0 double + 0 multi
+[04/19 00:57:24    105s] Total standard cell length = 3.8133 (mm), area = 0.0053 (mm^2)
+[04/19 00:57:24    105s] OPERPROF: Starting SiteArrayInit at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting spIGRtCostMap_init at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished spIGRtCostMap_init at level 2, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayMainInit_V17 at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Starting SiteArrayFPInit_V17 at level 3, MEM:861.1M
+[04/19 00:57:24    105s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[04/19 00:57:24    105s] OPERPROF:       Starting Placement-Init-Site-Array-V17 at level 4, MEM:861.1M
+[04/19 00:57:24    105s] SiteArray: one-level site array dimensions = 235 x 1736
+[04/19 00:57:24    105s] SiteArray: use 1,631,840 bytes
+[04/19 00:57:24    105s] SiteArray: current memory after site array memory allocatiion 861.1M
+[04/19 00:57:24    105s] SiteArray: FP blocked sites are writable
+[04/19 00:57:24    105s] OPERPROF:         Starting SiteArray/Init-VDDOnBottom at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished SiteArray/Init-VDDOnBottom at level 5, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting InitTechSitePattern at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished InitTechSitePattern at level 5, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting SiteArr/FP-Init-2 at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished SiteArr/FP-Init-2 at level 5, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting SiteArr/FP-Blockage at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished SiteArr/FP-Blockage at level 5, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Finished Placement-Init-Site-Array-V17 at level 4, CPU:0.000, REAL:0.005, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Starting Placement-Build-Cache-Physical-Only-Inst-Cache at level 4, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Finished Placement-Build-Cache-Physical-Only-Inst-Cache at level 4, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Starting Placement-Build-Follow-Pin at level 4, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting RoutingBlockageAnalysis at level 5, MEM:861.1M
+[04/19 00:57:24    105s] Estimated cell power/ground rail width = 0.175 um
+[04/19 00:57:24    105s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/19 00:57:24    105s] Mark StBox On SiteArr starts
+[04/19 00:57:24    105s] Mark StBox On SiteArr ends
+[04/19 00:57:24    105s] OPERPROF:         Finished RoutingBlockageAnalysis at level 5, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] spiAuditVddOnBottomForRows for llg="default" starts
+[04/19 00:57:24    105s] spiAuditVddOnBottomForRows ends
+[04/19 00:57:24    105s] OPERPROF:       Finished Placement-Build-Follow-Pin at level 4, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Starting SiteArary/SetupFPBlocked at level 4, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Finished SiteArary/SetupFPBlocked at level 4, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Finished SiteArrayFPInit_V17 at level 3, CPU:0.000, REAL:0.008, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Starting SiteArrayInitPartitionBorders at level 3, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Finished SiteArrayInitPartitionBorders at level 3, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Starting InitBlockedSiteAsBlockedInst at level 3, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Finished InitBlockedSiteAsBlockedInst at level 3, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Starting SiteArrayMarkPreplaceInsts at level 3, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Finished SiteArrayMarkPreplaceInsts at level 3, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Starting SiteCapAdjustOnNarrowBlockage at level 3, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Starting PlacementInitFenceForDensity at level 4, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting SiteArrayInitFenceEdgeBit at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished SiteArrayInitFenceEdgeBit at level 5, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Starting SiteArrayInitObstEdgeBit at level 5, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:         Finished SiteArrayInitObstEdgeBit at level 5, CPU:0.000, REAL:0.002, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Finished PlacementInitFenceForDensity at level 4, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Starting PlacementCleanupFence at level 4, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:       Finished PlacementCleanupFence at level 4, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:     Finished SiteCapAdjustOnNarrowBlockage at level 3, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayMainInit_V17 at level 2, CPU:0.020, REAL:0.020, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished SiteArrayInit at level 1, CPU:0.020, REAL:0.020, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] Average module density = 0.447.
+[04/19 00:57:24    105s] Density for the design = 0.447.
+[04/19 00:57:24    105s]        = (stdcell_area 20070 sites (5339 um^2) + block_area 162185 sites (43141 um^2)) / alloc_area 407960 sites (108517 um^2).
+[04/19 00:57:24    105s] Pin Density = 0.02804.
+[04/19 00:57:24    105s]             = total # of pins 11439 / total area 407960.
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] Initial padding reaches pin density 0.397 for top
+[04/19 00:57:24    105s] Min area ratio padding skipped minAreaTgt 1.050, addOnArea 187537.170
+[04/19 00:57:24    105s] InitPadU 0.447 -> 0.490 for top
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting PlacementInitFence at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished PlacementInitFence at level 1, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Starting spSectionHeadInit at level 1, MEM:861.1M
+[04/19 00:57:24    105s] OPERPROF: Finished spSectionHeadInit at level 1, CPU:0.000, REAL:0.003, MEM:861.1M
+[04/19 00:57:24    105s] === lastAutoLevel = 9 
+[04/19 00:57:24    105s] 0 delay mode for cte enabled initNetWt.
+[04/19 00:57:24    105s] no activity file in design. spp won't run.
+[04/19 00:57:24    105s] [spp] 0
+[04/19 00:57:24    105s] [adp] 0:1:0:1
+[04/19 00:57:24    105s] 0 delay mode for cte disabled initNetWt.
+[04/19 00:57:24    105s] **WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+[04/19 00:57:25    105s] Iteration  1: Total net bbox = 8.709e+04 (3.34e+04 5.37e+04)
+[04/19 00:57:25    105s]               Est.  stn bbox = 9.174e+04 (3.48e+04 5.69e+04)
+[04/19 00:57:25    105s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 865.1M
+[04/19 00:57:25    105s] Iteration  2: Total net bbox = 8.709e+04 (3.34e+04 5.37e+04)
+[04/19 00:57:25    105s]               Est.  stn bbox = 9.174e+04 (3.48e+04 5.69e+04)
+[04/19 00:57:25    105s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 865.1M
+[04/19 00:57:25    105s] exp_mt_sequential is set from setPlaceMode option to 1
+[04/19 00:57:25    105s] Setting dotProdMode from setPlaceMode option to Multi-thread sequential mode (nrThread=1)
+[04/19 00:57:25    105s] place_exp_mt_interval set to default 32
+[04/19 00:57:25    105s] place_exp_mt_interval_bias (first half) set to default 0.750000
+[04/19 00:57:25    105s] Iteration  3: Total net bbox = 7.440e+04 (3.12e+04 4.32e+04)
+[04/19 00:57:25    105s]               Est.  stn bbox = 7.877e+04 (3.27e+04 4.60e+04)
+[04/19 00:57:25    105s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 881.1M
+[04/19 00:57:25    106s] Iteration  4: Total net bbox = 3.416e+04 (1.35e+04 2.06e+04)
+[04/19 00:57:25    106s]               Est.  stn bbox = 3.754e+04 (1.49e+04 2.27e+04)
+[04/19 00:57:25    106s]               cpu = 0:00:00.1 real = 0:00:00.0 mem = 881.1M
+[04/19 00:57:25    106s] Iteration  5: Total net bbox = 3.760e+04 (1.67e+04 2.09e+04)
+[04/19 00:57:25    106s]               Est.  stn bbox = 4.178e+04 (1.86e+04 2.32e+04)
+[04/19 00:57:25    106s]               cpu = 0:00:00.2 real = 0:00:00.0 mem = 881.1M
+[04/19 00:57:26    106s] Iteration  6: Total net bbox = 4.413e+04 (1.95e+04 2.46e+04)
+[04/19 00:57:26    106s]               Est.  stn bbox = 5.099e+04 (2.24e+04 2.85e+04)
+[04/19 00:57:26    106s]               cpu = 0:00:00.3 real = 0:00:01.0 mem = 873.1M
+[04/19 00:57:26    106s] Iteration  7: Total net bbox = 8.452e+04 (4.03e+04 4.42e+04)
+[04/19 00:57:26    106s]               Est.  stn bbox = 9.225e+04 (4.35e+04 4.87e+04)
+[04/19 00:57:26    106s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 873.1M
+[04/19 00:57:26    106s] Iteration  8: Total net bbox = 8.452e+04 (4.03e+04 4.42e+04)
+[04/19 00:57:26    106s]               Est.  stn bbox = 9.225e+04 (4.35e+04 4.87e+04)
+[04/19 00:57:26    106s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 873.1M
+[04/19 00:57:26    107s] Iteration  9: Total net bbox = 8.686e+04 (4.17e+04 4.52e+04)
+[04/19 00:57:26    107s]               Est.  stn bbox = 9.633e+04 (4.63e+04 5.01e+04)
+[04/19 00:57:26    107s]               cpu = 0:00:00.6 real = 0:00:00.0 mem = 873.1M
+[04/19 00:57:26    107s] Iteration 10: Total net bbox = 8.686e+04 (4.17e+04 4.52e+04)
+[04/19 00:57:26    107s]               Est.  stn bbox = 9.633e+04 (4.63e+04 5.01e+04)
+[04/19 00:57:26    107s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 873.1M
+[04/19 00:57:27    107s] Iteration 11: Total net bbox = 8.809e+04 (4.32e+04 4.49e+04)
+[04/19 00:57:27    107s]               Est.  stn bbox = 9.760e+04 (4.78e+04 4.98e+04)
+[04/19 00:57:27    107s]               cpu = 0:00:00.6 real = 0:00:01.0 mem = 874.1M
+[04/19 00:57:27    107s] Iteration 12: Total net bbox = 8.809e+04 (4.32e+04 4.49e+04)
+[04/19 00:57:27    107s]               Est.  stn bbox = 9.760e+04 (4.78e+04 4.98e+04)
+[04/19 00:57:27    107s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+[04/19 00:57:27    107s] Iteration 13: Total net bbox = 7.316e+04 (3.86e+04 3.46e+04)
+[04/19 00:57:27    107s]               Est.  stn bbox = 8.232e+04 (4.35e+04 3.88e+04)
+[04/19 00:57:27    107s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+[04/19 00:57:27    107s] *** cost = 7.316e+04 (3.86e+04 3.46e+04) (cpu for global=0:00:02.0) real=0:00:03.0***
+[04/19 00:57:27    107s] net ignore based on current view = 0
+[04/19 00:57:27    107s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:874.1M
+[04/19 00:57:27    107s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:874.1M
+[04/19 00:57:27    107s] OPERPROF: Starting spFreeFakeNetlist at level 1, MEM:874.1M
+[04/19 00:57:27    107s] OPERPROF: Finished spFreeFakeNetlist at level 1, CPU:0.000, REAL:0.000, MEM:874.1M
+[04/19 00:57:27    107s] Solver runtime cpu: 0:00:01.7 real: 0:00:01.6
+[04/19 00:57:27    107s] Core Placement runtime cpu: 0:00:02.0 real: 0:00:03.0
+[04/19 00:57:27    107s] *** End of Placement (cpu=0:00:02.2, real=0:00:03.0, mem=874.1M) ***
+[04/19 00:57:27    107s] Some Macros are marked as preplaced.
+[04/19 00:57:27    107s] *** Finishing placeDesign default flow ***
+[04/19 00:57:27    107s] **placeDesign ... cpu = 0: 0: 3, real = 0: 0: 4, mem = 865.1M **
+[04/19 00:57:27    107s] INFO: Finished place_design in floorplan mode - no legalization done.
+[04/19 00:57:27    107s] 
+[04/19 00:57:27    107s] 
+[04/19 00:57:27    107s] *** Summary of all messages that are not suppressed in this session:
+[04/19 00:57:27    107s] Severity  ID               Count  Summary                                  
+[04/19 00:57:27    107s] WARNING   IMPSP-157            2  Macro '%s' is not placed within core bou...
+[04/19 00:57:27    107s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[04/19 00:57:27    107s] *** Message Summary: 3 warning(s), 0 error(s)
+[04/19 00:57:27    107s] 
+[04/19 00:57:27    107s] <CMD> selectInst my_aes
+[04/19 00:57:27    107s] <CMD> setObjFPlanBox Instance my_aes 24.585 163.3855 192.735 331.1055
+[04/19 00:57:27    107s] <CMD> setObjFPlanBox Instance my_aes 20.2775 161.539 188.4275 329.259
+[04/19 00:57:27    107s] <CMD> deselectAll
+[04/19 00:57:27    107s] <CMD> selectInst my_Mem
+[04/19 00:57:27    107s] <CMD> uiSetTool move
+[04/19 00:57:27    107s] <CMD> setObjFPlanBox Instance my_Mem 21.0735 20.0955 143.0735 142.0955
+[04/19 00:57:27    107s] <CMD> setPlaceMode -fp true
+[04/19 00:57:27    107s] <CMD> place_design
+[04/19 00:57:27    107s] [check_scan_connected]: number of scan connected with missing definition = 0, number of scan = 0, number of sequential = 407, percentage of missing scan cell = 0.00% (0 / 407)
+[04/19 00:57:27    107s] *** Starting placeDesign default flow ***
+[04/19 00:57:27    107s] *** Start deleteBufferTree ***
+[04/19 00:57:27    107s] Info: Detect buffers to remove automatically.
+[04/19 00:57:27    107s] Analyzing netlist ...
+[04/19 00:57:27    108s] Updating netlist
+[04/19 00:57:27    108s] 
+[04/19 00:57:27    108s] *summary: 0 instances (buffers/inverters) removed
+[04/19 00:57:27    108s] *** Finish deleteBufferTree (0:00:00.1) ***
+[04/19 00:57:27    108s] Enhanced MH flow has been turned off for floorplan mode.
+[04/19 00:57:27    108s] Deleted 0 physical inst  (cell - / prefix -).
+[04/19 00:57:27    108s] *** Starting "NanoPlace(TM) placement v#1 (mem=873.7M)" ...
+[04/19 00:57:27    108s] No user-set net weight.
+[04/19 00:57:27    108s] no activity file in design. spp won't run.
+[04/19 00:57:27    108s] Options: clkGateAware ignoreScan pinGuide congEffort=low gpeffort=fp 
+[04/19 00:57:27    108s] Scan chains were not defined.
+[04/19 00:57:27    108s] #std cell=3040 (0 fixed + 3040 movable) #block=2 (0 floating + 2 preplaced)
+[04/19 00:57:27    108s] #ioInst=0 #net=3516 #term=11439 #term/net=3.25, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=102
+[04/19 00:57:27    108s] stdCell: 3040 single + 0 double + 0 multi
+[04/19 00:57:27    108s] Total standard cell length = 3.8133 (mm), area = 0.0053 (mm^2)
+[04/19 00:57:27    108s] OPERPROF: Starting SiteArrayInit at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting spIGRtCostMap_init at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished spIGRtCostMap_init at level 2, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayMainInit_V17 at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Starting SiteArrayFPInit_V17 at level 3, MEM:873.7M
+[04/19 00:57:27    108s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[04/19 00:57:27    108s] OPERPROF:       Starting Placement-Init-Site-Array-V17 at level 4, MEM:873.7M
+[04/19 00:57:27    108s] SiteArray: one-level site array dimensions = 235 x 1736
+[04/19 00:57:27    108s] SiteArray: use 1,631,840 bytes
+[04/19 00:57:27    108s] SiteArray: current memory after site array memory allocatiion 873.7M
+[04/19 00:57:27    108s] SiteArray: FP blocked sites are writable
+[04/19 00:57:27    108s] OPERPROF:         Starting SiteArray/Init-VDDOnBottom at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished SiteArray/Init-VDDOnBottom at level 5, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting InitTechSitePattern at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished InitTechSitePattern at level 5, CPU:0.000, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting SiteArr/FP-Init-2 at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished SiteArr/FP-Init-2 at level 5, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting SiteArr/FP-Blockage at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished SiteArr/FP-Blockage at level 5, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished Placement-Init-Site-Array-V17 at level 4, CPU:0.000, REAL:0.004, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Starting Placement-Build-Cache-Physical-Only-Inst-Cache at level 4, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished Placement-Build-Cache-Physical-Only-Inst-Cache at level 4, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Starting Placement-Build-Follow-Pin at level 4, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting RoutingBlockageAnalysis at level 5, MEM:873.7M
+[04/19 00:57:27    108s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/19 00:57:27    108s] Mark StBox On SiteArr starts
+[04/19 00:57:27    108s] Mark StBox On SiteArr ends
+[04/19 00:57:27    108s] OPERPROF:         Finished RoutingBlockageAnalysis at level 5, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished Placement-Build-Follow-Pin at level 4, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Starting SiteArary/SetupFPBlocked at level 4, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished SiteArary/SetupFPBlocked at level 4, CPU:0.010, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Finished SiteArrayFPInit_V17 at level 3, CPU:0.010, REAL:0.007, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Starting SiteArrayInitPartitionBorders at level 3, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Finished SiteArrayInitPartitionBorders at level 3, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Starting InitBlockedSiteAsBlockedInst at level 3, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Finished InitBlockedSiteAsBlockedInst at level 3, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Starting SiteArrayMarkPreplaceInsts at level 3, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Finished SiteArrayMarkPreplaceInsts at level 3, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Starting SiteCapAdjustOnNarrowBlockage at level 3, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Starting PlacementInitFenceForDensity at level 4, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting SiteArrayInitFenceEdgeBit at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished SiteArrayInitFenceEdgeBit at level 5, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Starting SiteArrayInitObstEdgeBit at level 5, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:         Finished SiteArrayInitObstEdgeBit at level 5, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished PlacementInitFenceForDensity at level 4, CPU:0.000, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Starting PlacementCleanupFence at level 4, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:       Finished PlacementCleanupFence at level 4, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:     Finished SiteCapAdjustOnNarrowBlockage at level 3, CPU:0.030, REAL:0.031, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayMainInit_V17 at level 2, CPU:0.040, REAL:0.042, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished SiteArrayInit at level 1, CPU:0.040, REAL:0.043, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.000, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] Average module density = 0.086.
+[04/19 00:57:27    108s] Density for the design = 0.086.
+[04/19 00:57:27    108s]        = stdcell_area 20070 sites (5339 um^2) / alloc_area 234323 sites (62330 um^2).
+[04/19 00:57:27    108s] Pin Density = 0.02804.
+[04/19 00:57:27    108s]             = total # of pins 11439 / total area 407960.
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.010, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementInitFenceForDensity at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementInitFenceForDensity at level 1, CPU:0.000, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] Initial padding reaches pin density 0.397 for top
+[04/19 00:57:27    108s] Min area ratio padding skipped minAreaTgt 1.050, addOnArea 22370.000
+[04/19 00:57:27    108s] InitPadU 0.086 -> 0.161 for top
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting PlacementInitFence at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitFenceEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitFenceEdgeBit at level 2, CPU:0.000, REAL:0.000, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Starting SiteArrayInitObstEdgeBit at level 2, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF:   Finished SiteArrayInitObstEdgeBit at level 2, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished PlacementInitFence at level 1, CPU:0.010, REAL:0.003, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Starting spSectionHeadInit at level 1, MEM:873.7M
+[04/19 00:57:27    108s] OPERPROF: Finished spSectionHeadInit at level 1, CPU:0.000, REAL:0.002, MEM:873.7M
+[04/19 00:57:27    108s] === lastAutoLevel = 9 
+[04/19 00:57:27    108s] 0 delay mode for cte enabled initNetWt.
+[04/19 00:57:27    108s] no activity file in design. spp won't run.
+[04/19 00:57:27    108s] [spp] 0
+[04/19 00:57:27    108s] [adp] 0:1:0:1
+[04/19 00:57:27    108s] 0 delay mode for cte disabled initNetWt.
+[04/19 00:57:27    108s] **WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+[04/19 00:57:27    108s] Iteration  1: Total net bbox = 4.570e+04 (3.82e+04 7.52e+03)
+[04/19 00:57:27    108s]               Est.  stn bbox = 4.795e+04 (4.02e+04 7.75e+03)
+[04/19 00:57:27    108s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:27    108s] Iteration  2: Total net bbox = 4.570e+04 (3.82e+04 7.52e+03)
+[04/19 00:57:27    108s]               Est.  stn bbox = 4.795e+04 (4.02e+04 7.75e+03)
+[04/19 00:57:27    108s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:27    108s] Iteration  3: Total net bbox = 1.682e+04 (9.61e+03 7.21e+03)
+[04/19 00:57:27    108s]               Est.  stn bbox = 1.786e+04 (1.03e+04 7.55e+03)
+[04/19 00:57:27    108s]               cpu = 0:00:00.1 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:28    108s] Iteration  4: Total net bbox = 2.584e+04 (1.72e+04 8.66e+03)
+[04/19 00:57:28    108s]               Est.  stn bbox = 2.785e+04 (1.87e+04 9.18e+03)
+[04/19 00:57:28    108s]               cpu = 0:00:00.2 real = 0:00:01.0 mem = 870.9M
+[04/19 00:57:28    108s] Iteration  5: Total net bbox = 3.705e+04 (2.36e+04 1.35e+04)
+[04/19 00:57:28    108s]               Est.  stn bbox = 4.116e+04 (2.64e+04 1.47e+04)
+[04/19 00:57:28    108s]               cpu = 0:00:00.3 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:28    109s] Iteration  6: Total net bbox = 4.459e+04 (2.51e+04 1.95e+04)
+[04/19 00:57:28    109s]               Est.  stn bbox = 5.248e+04 (2.94e+04 2.31e+04)
+[04/19 00:57:28    109s]               cpu = 0:00:00.3 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:28    109s] Iteration  7: Total net bbox = 7.730e+04 (4.30e+04 3.43e+04)
+[04/19 00:57:28    109s]               Est.  stn bbox = 8.591e+04 (4.77e+04 3.82e+04)
+[04/19 00:57:28    109s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:28    109s] Iteration  8: Total net bbox = 7.730e+04 (4.30e+04 3.43e+04)
+[04/19 00:57:28    109s]               Est.  stn bbox = 8.591e+04 (4.77e+04 3.82e+04)
+[04/19 00:57:28    109s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    109s] Iteration  9: Total net bbox = 7.829e+04 (4.36e+04 3.47e+04)
+[04/19 00:57:29    109s]               Est.  stn bbox = 8.741e+04 (4.88e+04 3.86e+04)
+[04/19 00:57:29    109s]               cpu = 0:00:00.4 real = 0:00:01.0 mem = 870.9M
+[04/19 00:57:29    109s] Iteration 10: Total net bbox = 7.829e+04 (4.36e+04 3.47e+04)
+[04/19 00:57:29    109s]               Est.  stn bbox = 8.741e+04 (4.88e+04 3.86e+04)
+[04/19 00:57:29    109s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    109s] Iteration 11: Total net bbox = 7.989e+04 (4.37e+04 3.62e+04)
+[04/19 00:57:29    109s]               Est.  stn bbox = 8.918e+04 (4.89e+04 4.03e+04)
+[04/19 00:57:29    109s]               cpu = 0:00:00.3 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    109s] Iteration 12: Total net bbox = 7.989e+04 (4.37e+04 3.62e+04)
+[04/19 00:57:29    109s]               Est.  stn bbox = 8.918e+04 (4.89e+04 4.03e+04)
+[04/19 00:57:29    109s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    110s] Iteration 13: Total net bbox = 8.101e+04 (4.42e+04 3.68e+04)
+[04/19 00:57:29    110s]               Est.  stn bbox = 9.029e+04 (4.95e+04 4.08e+04)
+[04/19 00:57:29    110s]               cpu = 0:00:00.3 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    110s] Iteration 14: Total net bbox = 8.101e+04 (4.42e+04 3.68e+04)
+[04/19 00:57:29    110s]               Est.  stn bbox = 9.029e+04 (4.95e+04 4.08e+04)
+[04/19 00:57:29    110s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.9M
+[04/19 00:57:29    110s] *** cost = 8.101e+04 (4.42e+04 3.68e+04) (cpu for global=0:00:02.1) real=0:00:02.0***
+[04/19 00:57:29    110s] OPERPROF: Starting PlacementCleanupFence at level 1, MEM:870.9M
+[04/19 00:57:29    110s] OPERPROF: Finished PlacementCleanupFence at level 1, CPU:0.000, REAL:0.001, MEM:870.9M
+[04/19 00:57:29    110s] OPERPROF: Starting spFreeFakeNetlist at level 1, MEM:870.9M
+[04/19 00:57:29    110s] OPERPROF: Finished spFreeFakeNetlist at level 1, CPU:0.000, REAL:0.000, MEM:870.9M
+[04/19 00:57:29    110s] Solver runtime cpu: 0:00:01.8 real: 0:00:01.7
+[04/19 00:57:29    110s] Core Placement runtime cpu: 0:00:02.0 real: 0:00:02.0
+[04/19 00:57:29    110s] *** End of Placement (cpu=0:00:02.2, real=0:00:02.0, mem=870.9M) ***
+[04/19 00:57:29    110s] *** Finishing placeDesign default flow ***
+[04/19 00:57:29    110s] **placeDesign ... cpu = 0: 0: 2, real = 0: 0: 2, mem = 866.9M **
+[04/19 00:57:29    110s] INFO: Finished place_design in floorplan mode - no legalization done.
+[04/19 00:57:29    110s] 
+[04/19 00:57:29    110s] 
+[04/19 00:57:29    110s] *** Summary of all messages that are not suppressed in this session:
+[04/19 00:57:29    110s] Severity  ID               Count  Summary                                  
+[04/19 00:57:29    110s] WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+[04/19 00:57:29    110s] *** Message Summary: 1 warning(s), 0 error(s)
+[04/19 00:57:29    110s] 
+[04/19 00:57:29    110s] <CMD> editPin -fixedPin 1 -snap TRACK -side Top -unit TRACK -layer 2 -spreadType center -spacing 10.0 -pin {resetn clk {EXT_ADDRBUS[0]} {EXT_ADDRBUS[1]} {EXT_ADDRBUS[2]} {EXT_ADDRBUS[3]} {EXT_ADDRBUS[4]} {EXT_ADDRBUS[5]} {EXT_ADDRBUS[6]} {EXT_ADDRBUS[7]} {EXT_ADDRBUS[8]} {EXT_ADDRBUS[9]} {EXT_ADDRBUS[10]} {EXT_ADDRBUS[11]} {EXT_ADDRBUS[12]} {EXT_ADDRBUS[13]} {EXT_ADDRBUS[14]} {EXT_ADDRBUS[15]} {EXT_ADDRBUS[16]} {EXT_ADDRBUS[17]} {EXT_ADDRBUS[18]} {EXT_ADDRBUS[19]} {EXT_ADDRBUS[20]} {EXT_ADDRBUS[21]} {EXT_ADDRBUS[22]} {EXT_ADDRBUS[23]} {EXT_ADDRBUS[24]} {EXT_ADDRBUS[25]} {EXT_ADDRBUS[26]} {EXT_ADDRBUS[27]} {EXT_ADDRBUS[28]} {EXT_ADDRBUS[29]} {EXT_ADDRBUS[30]} {EXT_ADDRBUS[31]} EXT_MR EXT_MW {EXT_WDATABUS[0]} {EXT_WDATABUS[1]} {EXT_WDATABUS[2]} {EXT_WDATABUS[3]} {EXT_WDATABUS[4]} {EXT_WDATABUS[5]} {EXT_WDATABUS[6]} {EXT_WDATABUS[7]} {EXT_WDATABUS[8]} {EXT_WDATABUS[9]} {EXT_WDATABUS[10]} {EXT_WDATABUS[11]} {EXT_WDATABUS[12]} {EXT_WDATABUS[13]} {EXT_WDATABUS[14]} {EXT_WDATABUS[15]} {EXT_WDATABUS[16]} {EXT_WDATABUS[17]} {EXT_WDATABUS[18]} {EXT_WDATABUS[19]} {EXT_WDATABUS[20]} {EXT_WDATABUS[21]} {EXT_WDATABUS[22]} {EXT_WDATABUS[23]} {EXT_WDATABUS[24]} {EXT_WDATABUS[25]} {EXT_WDATABUS[26]} {EXT_WDATABUS[27]} {EXT_WDATABUS[28]} {EXT_WDATABUS[29]} {EXT_WDATABUS[30]} {EXT_WDATABUS[31]} EXT_BUSY}
+[04/19 00:57:29    110s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[04/19 00:57:29    110s] Successfully spread [69] pins.
+[04/19 00:57:29    110s] editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 873.9M).
+[04/19 00:57:29    110s] <CMD> editPin -fixedPin 1 -snap TRACK -side Right -use TIELOW -unit TRACK -layer 2 -spreadType center -spacing 10.0 -pin {EXT_NREADY {EXT_RDATABUS[0]} {EXT_RDATABUS[1]} {EXT_RDATABUS[2]} {EXT_RDATABUS[3]} {EXT_RDATABUS[4]} {EXT_RDATABUS[5]} {EXT_RDATABUS[6]} {EXT_RDATABUS[7]} {EXT_RDATABUS[8]} {EXT_RDATABUS[9]} {EXT_RDATABUS[10]} {EXT_RDATABUS[11]} {EXT_RDATABUS[12]} {EXT_RDATABUS[13]} {EXT_RDATABUS[14]} {EXT_RDATABUS[15]} {EXT_RDATABUS[16]} {EXT_RDATABUS[17]} {EXT_RDATABUS[18]} {EXT_RDATABUS[19]} {EXT_RDATABUS[20]} {EXT_RDATABUS[21]} {EXT_RDATABUS[22]} {EXT_RDATABUS[23]} {EXT_RDATABUS[24]} {EXT_RDATABUS[25]} {EXT_RDATABUS[26]} {EXT_RDATABUS[27]} {EXT_RDATABUS[28]} {EXT_RDATABUS[29]} {EXT_RDATABUS[30]} {EXT_RDATABUS[31]}}
+[04/19 00:57:29    110s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[04/19 00:57:29    110s] Successfully spread [33] pins.
+[04/19 00:57:29    110s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 874.9M).
+[04/19 00:57:29    110s] <CMD> addRing -nets {VDD VSS} -width 0.6 -spacing 0.5 -layer {top 7 bottom 7 left 6 right 6}
+[04/19 00:57:29    110s] #% Begin addRing (date=04/19 00:57:29, mem=655.2M)
+[04/19 00:57:29    110s] 
+[04/19 00:57:29    110s] Ring generation is complete.
+[04/19 00:57:29    110s] vias are now being generated.
+[04/19 00:57:29    110s] addRing created 8 wires.
+[04/19 00:57:29    110s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[04/19 00:57:29    110s] +--------+----------------+----------------+
+[04/19 00:57:29    110s] |  Layer |     Created    |     Deleted    |
+[04/19 00:57:29    110s] +--------+----------------+----------------+
+[04/19 00:57:29    110s] | metal6 |        4       |       NA       |
+[04/19 00:57:29    110s] |  via6  |        8       |        0       |
+[04/19 00:57:29    110s] | metal7 |        4       |       NA       |
+[04/19 00:57:29    110s] +--------+----------------+----------------+
+[04/19 00:57:29    110s] #% End addRing (date=04/19 00:57:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=656.6M, current mem=656.6M)
+[04/19 00:57:29    110s] <CMD> addStripe -nets {VSS VDD} -layer 6 -direction vertical -width 0.4 -spacing 0.5 -set_to_set_distance 5
+[04/19 00:57:29    110s] #% Begin addStripe (date=04/19 00:57:29, mem=656.6M)
+[04/19 00:57:29    110s] 
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'I_1' was increased to (128.950 145.840) (129.525 147.240) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'I_0' was increased to (129.555 145.770) (130.130 147.175) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][0]' was increased to (138.455 152.170) (141.690 153.575) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][1]' was increased to (146.590 153.475) (149.825 154.880) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][2]' was increased to (138.290 156.065) (141.525 157.470) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][0]' was increased to (146.825 152.265) (150.060 153.670) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][1]' was increased to (139.430 159.515) (142.665 160.920) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][0]' was increased to (135.900 160.380) (139.135 161.785) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][1]' was increased to (141.960 153.500) (145.195 154.905) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U3' was increased to (163.230 153.810) (164.185 155.215) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U4' was increased to (163.145 157.195) (164.100 158.600) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U5' was increased to (162.685 155.240) (163.640 156.640) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U6' was increased to (162.865 153.960) (163.820 155.365) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U7' was increased to (162.705 155.275) (163.655 156.680) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U8' was increased to (162.860 153.965) (163.815 155.370) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U9' was increased to (163.055 157.110) (164.010 158.515) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U10' was increased to (163.225 153.815) (164.180 155.220) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U17' was increased to (134.640 157.085) (135.595 158.490) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U18' was increased to (133.315 153.850) (134.270 155.255) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U21' was increased to (113.150 160.885) (114.865 162.290) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:29    110s] **WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+[04/19 00:57:29    110s] To increase the message display limit, refer to the product command reference manual.
+[04/19 00:57:30    110s] Starting stripe generation ...
+[04/19 00:57:30    110s] Non-Default Mode Option Settings :
+[04/19 00:57:30    110s]   NONE
+[04/19 00:57:30    110s] Stripe generation is complete.
+[04/19 00:57:30    110s] vias are now being generated.
+[04/19 00:57:30    110s] addStripe created 200 wires.
+[04/19 00:57:30    110s] ViaGen created 264 vias, deleted 0 via to avoid violation.
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] |  Layer |     Created    |     Deleted    |
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] | metal6 |       200      |       NA       |
+[04/19 00:57:30    110s] |  via6  |       264      |        0       |
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] #% End addStripe (date=04/19 00:57:30, total cpu=0:00:00.1, real=0:00:01.0, peak res=658.4M, current mem=658.4M)
+[04/19 00:57:30    110s] <CMD> addStripe -nets {VSS VDD} -layer 7 -direction horizontal -width 0.4 -spacing 0.5 -set_to_set_distance 5
+[04/19 00:57:30    110s] #% Begin addStripe (date=04/19 00:57:30, mem=658.4M)
+[04/19 00:57:30    110s] 
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'I_1' was increased to (128.950 145.840) (129.525 147.240) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'I_0' was increased to (129.555 145.770) (130.130 147.175) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][0]' was increased to (138.455 152.170) (141.690 153.575) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][1]' was increased to (146.590 153.475) (149.825 154.880) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][2]' was increased to (138.290 156.065) (141.525 157.470) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][0]' was increased to (146.825 152.265) (150.060 153.670) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][1]' was increased to (139.430 159.515) (142.665 160.920) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][0]' was increased to (135.900 160.380) (139.135 161.785) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][1]' was increased to (141.960 153.500) (145.195 154.905) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U3' was increased to (163.230 153.810) (164.185 155.215) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U4' was increased to (163.145 157.195) (164.100 158.600) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U5' was increased to (162.685 155.240) (163.640 156.640) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U6' was increased to (162.865 153.960) (163.820 155.365) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U7' was increased to (162.705 155.275) (163.655 156.680) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U8' was increased to (162.860 153.965) (163.815 155.370) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U9' was increased to (163.055 157.110) (164.010 158.515) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U10' was increased to (163.225 153.815) (164.180 155.220) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U17' was increased to (134.640 157.085) (135.595 158.490) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U18' was increased to (133.315 153.850) (134.270 155.255) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U21' was increased to (113.150 160.885) (114.865 162.290) because pins or obstructions were outside the original block boundary.
+[04/19 00:57:30    110s] **WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+[04/19 00:57:30    110s] To increase the message display limit, refer to the product command reference manual.
+[04/19 00:57:30    110s] Starting stripe generation ...
+[04/19 00:57:30    110s] Non-Default Mode Option Settings :
+[04/19 00:57:30    110s]   -trim_antenna_max_distance  0.00
+[04/19 00:57:30    110s] Stripe generation is complete.
+[04/19 00:57:30    110s] vias are now being generated.
+[04/19 00:57:30    110s] addStripe created 201 wires.
+[04/19 00:57:30    110s] ViaGen created 6563 vias, deleted 0 via to avoid violation.
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] |  Layer |     Created    |     Deleted    |
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] |  via6  |      6563      |        0       |
+[04/19 00:57:30    110s] | metal7 |       201      |       NA       |
+[04/19 00:57:30    110s] +--------+----------------+----------------+
+[04/19 00:57:30    110s] #% End addStripe (date=04/19 00:57:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=658.5M, current mem=658.5M)
+[04/19 00:57:30    110s] invalid command name "globalNetName"
+[04/19 01:05:55    157s] <CMD> clearGlobalNets
+[04/19 01:05:55    157s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:05:55    157s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:05:55    157s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:14    159s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:14    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:14    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:17    159s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:17    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:17    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:23    159s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:23    159s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:23    159s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:23    159s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:25    160s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:25    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:25    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:26    160s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:26    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:26    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:34    160s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:34    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:34    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> clearGlobalNets
+[04/19 01:06:36    160s] <CMD> globalNetConnect VDD -type pgpin -pin dbgTieHighNet -instanceBasename *
+[04/19 01:06:36    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'dbgTieHighNet' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin dbgTieLowNet -instanceBasename *
+[04/19 01:06:36    160s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'dbgTieLowNet' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> loadWorkspace -name {Violation Browser + Physical}
+[04/19 01:07:04    162s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Apr 19 01:07:04 2021
+  Total CPU time:     0:02:42
+  Total real time:    0:26:09
+  Peak memory (main): 675.50MB
+
+[04/19 01:07:04    162s] 
+[04/19 01:07:04    162s] *** Memory Usage v#1 (Current mem = 907.418M, initial mem = 251.465M) ***
+[04/19 01:07:04    162s] 
+[04/19 01:07:04    162s] *** Summary of all messages that are not suppressed in this session:
+[04/19 01:07:04    162s] Severity  ID               Count  Summary                                  
+[04/19 01:07:04    162s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[04/19 01:07:04    162s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[04/19 01:07:04    162s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+[04/19 01:07:04    162s] ERROR     IMPDB-1221          20  A global net connection rule was specifi...
+[04/19 01:07:04    162s] WARNING   IMPPP-133         6016  The block boundary of instance '%s' was ...
+[04/19 01:07:04    162s] WARNING   IMPSP-157            2  Macro '%s' is not placed within core bou...
+[04/19 01:07:04    162s] WARNING   IMPSP-9531           2  Turning off clkGateAware when timingDriv...
+[04/19 01:07:04    162s] ERROR     IMPOAX-142           3  %s                                       
+[04/19 01:07:04    162s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/19 01:07:04    162s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/19 01:07:04    162s] WARNING   IMPUDM-33            2  Global variable "%s" is obsolete and wil...
+[04/19 01:07:04    162s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/19 01:07:04    162s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/19 01:07:04    162s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/19 01:07:04    162s] WARNING   TECHLIB-1177         1  'index_%d' defined in '%s' group should ...
+[04/19 01:07:04    162s] *** Message Summary: 6052 warning(s), 25 error(s)
+[04/19 01:07:04    162s] 
+[04/19 01:07:04    162s] --- Ending "Innovus" (totcpu=0:02:43, real=0:26:07, mem=907.4M) ---

@@ -1,0 +1,668 @@
+[04/20 11:10:26      0s] 
+[04/20 11:10:26      0s] Cadence Innovus(TM) Implementation System.
+[04/20 11:10:26      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/20 11:10:26      0s] 
+[04/20 11:10:26      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[04/20 11:10:26      0s] Options:	
+[04/20 11:10:26      0s] Date:		Tue Apr 20 11:10:26 2021
+[04/20 11:10:26      0s] Host:		ensc-esil-01 (x86_64 w/Linux 3.10.0-1127.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz 8192KB)
+[04/20 11:10:26      0s] OS:		CentOS Linux release 7.8.2003 (Core)
+[04/20 11:10:26      0s] 
+[04/20 11:10:26      0s] License:
+[04/20 11:10:27      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[04/20 11:10:27      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/20 11:10:29      0s] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libddbase_sh.so: undefined symbol: _ZTIN12OpenAccess_419oaVersionedObserverINS_12oaLibDefListELj1EEE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[04/20 11:10:43      9s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[04/20 11:10:43      9s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[04/20 11:10:43      9s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[04/20 11:10:43      9s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[04/20 11:10:43      9s] @(#)CDS: CPE v18.10-p005
+[04/20 11:10:43      9s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[04/20 11:10:43      9s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[04/20 11:10:43      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[04/20 11:10:43      9s] @(#)CDS: RCDB 11.13
+[04/20 11:10:43      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_10272_ensc-esil-01_escmc27_vB1H7c.
+
+[04/20 11:10:43      9s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[04/20 11:10:45     10s] 
+[04/20 11:10:45     10s] **INFO:  MMMC transition support version v31-84 
+[04/20 11:10:45     10s] 
+[04/20 11:10:45     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/20 11:10:45     10s] <CMD> suppressMessage ENCEXT-2799
+[04/20 11:10:45     10s] <CMD> win
+[04/20 11:23:58     88s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/20 11:23:58     88s] <CMD> suppressMessage ENCEXT-2799
+[04/20 11:23:58     88s] <CMD> win
+[04/20 11:23:58     88s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[04/20 11:23:58     88s] <CMD> set defHierChar /
+[04/20 11:23:58     88s] <CMD> set distributed_client_message_echo 1
+[04/20 11:23:58     88s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[04/20 11:23:58     88s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[04/20 11:23:58     88s] <CMD> set init_gnd_net VSS
+[04/20 11:23:58     88s] <CMD> set init_lef_file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+[04/20 11:23:58     88s] <CMD> set init_mmmc_file Default.view
+[04/20 11:23:58     88s] <CMD> set init_oa_search_lib {}
+[04/20 11:23:58     88s] <CMD> set init_original_verilog_files inputs/ensc450.ref.v
+[04/20 11:23:58     88s] <CMD> set init_pwr_net VDD
+[04/20 11:23:58     88s] <CMD> set init_top_cell ensc450
+[04/20 11:23:58     88s] <CMD> set init_verilog inputs/ensc450.ref.v
+[04/20 11:23:58     88s] <CMD> set latch_time_borrow_mode max_borrow
+[04/20 11:23:58     88s] <CMD> set pegDefaultResScaleFactor 1
+[04/20 11:23:58     88s] <CMD> set pegDetailResScaleFactor 1
+[04/20 11:23:58     88s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[04/20 11:23:58     88s] <CMD> set soft_stack_size_limit 31
+[04/20 11:23:58     88s] <CMD> suppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> suppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/20 11:23:58     88s] <CMD> suppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/20 11:23:58     88s] <CMD> suppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/20 11:23:58     88s] <CMD> set timing_enable_default_delay_arc 1
+[04/20 11:23:58     88s] <CMD> init_design
+[04/20 11:23:58     88s] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+#% Begin Load MMMC data ... (date=04/20 11:23:58, mem=414.7M)
+[04/20 11:23:58     88s] #% End Load MMMC data ... (date=04/20 11:23:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=414.8M, current mem=414.8M)
+[04/20 11:23:58     88s] 
+[04/20 11:23:58     88s] Loading LEF file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ...
+[04/20 11:23:58     88s] Set DBUPerIGU to M2 pitch 380.
+[04/20 11:23:58     88s] 
+[04/20 11:23:58     88s] viaInitial starts at Tue Apr 20 11:23:58 2021
+viaInitial ends at Tue Apr 20 11:23:58 2021
+Loading view definition file from Default.view
+[04/20 11:23:58     88s] Reading nangate45nm_ls timing library '/ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib' ...
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/20 11:23:58     88s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/20 11:23:58     88s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[04/20 11:23:58     88s] *** End library_loading (cpu=0.00min, real=0.00min, mem=21.0M, fe_cpu=1.48min, fe_real=13.53min, fe_mem=594.2M) ***
+[04/20 11:23:58     88s] #% Begin Load netlist data ... (date=04/20 11:23:58, mem=428.6M)
+[04/20 11:23:58     88s] *** Begin netlist parsing (mem=594.2M) ***
+[04/20 11:23:58     88s] Created 134 new cells from 1 timing libraries.
+[04/20 11:23:58     88s] Reading netlist ...
+[04/20 11:23:58     88s] Backslashed names will retain backslash and a trailing blank character.
+[04/20 11:23:58     88s] Reading verilog netlist 'inputs/ensc450.ref.v'
+[04/20 11:23:58     88s] **WARN: (IMPVL-346):	Module 'SRAM' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[04/20 11:23:58     88s] Type 'man IMPVL-346' for more detail.
+[04/20 11:23:58     88s] Undeclared bus address in module SRAM ... created as [10:0].
+[04/20 11:23:58     88s] Undeclared bus bit_wen in module SRAM ... created as [31:0].
+[04/20 11:23:58     88s] Undeclared bus data_in in module SRAM ... created as [31:0].
+[04/20 11:23:58     88s] Undeclared bus data_out in module SRAM ... created as [31:0].
+[04/20 11:23:58     88s] **WARN: (IMPVL-346):	Module 'aesbuffer' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[04/20 11:23:58     88s] Type 'man IMPVL-346' for more detail.
+[04/20 11:23:58     88s] Undeclared bus data_out in module aesbuffer ... created as [31:0].
+[04/20 11:23:58     88s] Undeclared bus data_in in module aesbuffer ... created as [31:0].
+[04/20 11:23:58     88s] Undeclared bus addr_in in module aesbuffer ... created as [31:0].
+[04/20 11:23:58     88s] 
+[04/20 11:23:58     88s] *** Memory Usage v#1 (Current mem = 594.250M, initial mem = 259.465M) ***
+[04/20 11:23:58     88s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=594.2M) ***
+[04/20 11:23:58     88s] #% End Load netlist data ... (date=04/20 11:23:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=434.7M, current mem=434.7M)
+[04/20 11:23:58     88s] Set top cell to ensc450.
+[04/20 11:23:58     88s] Hooked 134 DB cells to tlib cells.
+[04/20 11:23:58     88s] **WARN: (IMPDB-2504):	Cell 'aesbuffer' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/20 11:23:58     88s] **WARN: (IMPDB-2504):	Cell 'SRAM' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[31]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[31]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[30]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[30]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[29]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[29]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[28]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[28]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[27]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[27]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[26]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[26]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[25]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[25]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[24]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[24]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[23]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[23]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[22]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[22]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[21]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[21]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[20]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[20]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[19]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[19]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[18]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[18]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[17]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[17]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[16]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[16]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[15]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[15]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[14]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[14]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[13]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[13]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[12]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[12]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[11]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[11]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[10]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[10]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[9]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[9]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[8]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[8]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[7]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[7]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[6]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[6]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[5]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[5]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[4]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[4]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[3]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[3]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[2]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[2]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[1]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[1]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'SRAM' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[0]' of cell 'SRAM' as output for net 'SRAM_RDATABUS[0]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[31]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[31]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[30]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[30]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[29]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[29]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[28]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[28]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[27]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[27]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[26]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[26]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[25]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[25]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[24]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[24]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[23]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[23]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[22]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[22]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[21]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[21]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[20]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[20]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[19]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[19]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[18]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[18]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[17]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[17]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[16]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[16]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[15]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[15]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[14]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[14]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[13]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[13]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[12]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[12]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[11]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[11]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[10]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[10]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[9]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[9]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[8]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[8]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[7]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[7]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[6]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[6]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[5]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[5]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[4]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[4]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[3]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[3]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[2]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[2]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[1]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[1]' in module 'ensc450'.
+[04/20 11:23:58     88s] Cell 'aesbuffer' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'data_out[0]' of cell 'aesbuffer' as output for net 'YOUR_RDATABUS[0]' in module 'ensc450'.
+[04/20 11:23:58     88s] 2 empty module found.
+[04/20 11:23:58     88s] Starting recursive module instantiation check.
+[04/20 11:23:58     88s] No recursion found.
+[04/20 11:23:58     88s] Term dir updated for 0 vinsts of 2 cells.
+[04/20 11:23:58     88s] Building hierarchical netlist for Cell ensc450 ...
+[04/20 11:23:58     88s] *** Netlist is unique.
+[04/20 11:23:58     88s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[04/20 11:23:58     88s] ** info: there are 151 modules.
+[04/20 11:23:58     88s] ** info: there are 3079 stdCell insts.
+[04/20 11:23:58     88s] 
+[04/20 11:23:58     88s] *** Memory Usage v#1 (Current mem = 631.676M, initial mem = 259.465M) ***
+[04/20 11:23:58     88s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/20 11:23:58     88s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/20 11:23:58     88s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/20 11:23:58     88s] Set Default Net Delay as 1000 ps.
+[04/20 11:23:58     88s] Set Default Net Load as 0.5 pF. 
+[04/20 11:23:58     88s] Set Default Input Pin Transition as 0.1 ps.
+[04/20 11:23:59     89s] Extraction setup Started 
+[04/20 11:23:59     89s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/20 11:23:59     89s] Reading Capacitance Table File /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl ...
+[04/20 11:23:59     89s] Cap table was created using Encounter 08.10-p004_1.
+[04/20 11:23:59     89s] Process name: master_techFreePDK45.
+[04/20 11:23:59     89s] Importing multi-corner RC tables ... 
+[04/20 11:23:59     89s] Summary of Active RC-Corners : 
+[04/20 11:23:59     89s]  
+[04/20 11:23:59     89s]  Analysis View: rgb_av
+[04/20 11:23:59     89s]     RC-Corner Name        : nangate45nm_caps
+[04/20 11:23:59     89s]     RC-Corner Index       : 0
+[04/20 11:23:59     89s]     RC-Corner Temperature : 125 Celsius
+[04/20 11:23:59     89s]     RC-Corner Cap Table   : '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl'
+[04/20 11:23:59     89s]     RC-Corner PreRoute Res Factor         : 1
+[04/20 11:23:59     89s]     RC-Corner PreRoute Cap Factor         : 1
+[04/20 11:23:59     89s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/20 11:23:59     89s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/20 11:23:59     89s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/20 11:23:59     89s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/20 11:23:59     89s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/20 11:23:59     89s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/20 11:23:59     89s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/20 11:23:59     89s] Updating RC grid for preRoute extraction ...
+[04/20 11:23:59     89s] Initializing multi-corner capacitance tables ... 
+[04/20 11:23:59     89s] Initializing multi-corner resistance tables ...
+[04/20 11:23:59     89s] *Info: initialize multi-corner CTS.
+[04/20 11:23:59     89s] Reading timing constraints file 'inputs/aesbuffer.sdc' ...
+[04/20 11:23:59     89s] Current (total cpu=0:01:29, real=0:13:33, peak res=569.6M, current mem=569.6M)
+[04/20 11:23:59     89s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/aesbuffer.sdc, Line 8).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[31]' (File inputs/aesbuffer.sdc, Line 9).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[31]' (File inputs/aesbuffer.sdc, Line 9).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 9).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[30]' (File inputs/aesbuffer.sdc, Line 10).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[30]' (File inputs/aesbuffer.sdc, Line 10).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 10).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[29]' (File inputs/aesbuffer.sdc, Line 11).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[29]' (File inputs/aesbuffer.sdc, Line 11).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 11).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[28]' (File inputs/aesbuffer.sdc, Line 12).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[28]' (File inputs/aesbuffer.sdc, Line 12).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 12).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[27]' (File inputs/aesbuffer.sdc, Line 13).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[27]' (File inputs/aesbuffer.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[26]' (File inputs/aesbuffer.sdc, Line 14).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[26]' (File inputs/aesbuffer.sdc, Line 14).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 14).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[25]' (File inputs/aesbuffer.sdc, Line 15).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[25]' (File inputs/aesbuffer.sdc, Line 15).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 15).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[24]' (File inputs/aesbuffer.sdc, Line 16).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[24]' (File inputs/aesbuffer.sdc, Line 16).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 16).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[23]' (File inputs/aesbuffer.sdc, Line 17).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[23]' (File inputs/aesbuffer.sdc, Line 17).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[22]' (File inputs/aesbuffer.sdc, Line 18).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_out[22]' (File inputs/aesbuffer.sdc, Line 18).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File inputs/aesbuffer.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[21]' (File inputs/aesbuffer.sdc, Line 19).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] Message <TCLCMD-917> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File inputs/aesbuffer.sdc, Line 19).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[20]' (File inputs/aesbuffer.sdc, Line 20).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[19]' (File inputs/aesbuffer.sdc, Line 21).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[18]' (File inputs/aesbuffer.sdc, Line 22).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[17]' (File inputs/aesbuffer.sdc, Line 23).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[16]' (File inputs/aesbuffer.sdc, Line 24).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[15]' (File inputs/aesbuffer.sdc, Line 25).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[14]' (File inputs/aesbuffer.sdc, Line 26).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[13]' (File inputs/aesbuffer.sdc, Line 27).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_out[12]' (File inputs/aesbuffer.sdc, Line 28).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File inputs/aesbuffer.sdc, Line 29).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File inputs/aesbuffer.sdc, Line 43).
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] **ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 45).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 46).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 47).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 48).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 49).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 50).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 51).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 52).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 53).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 54).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 55).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 56).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 57).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 58).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 59).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 60).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 61).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 62).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 63).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 64).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 65).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 66).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 67).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 68).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 69).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 70).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 71).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 72).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 73).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 74).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 75).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 76).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 77).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 78).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 79).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 80).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 81).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 82).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 83).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 84).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 85).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 86).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 87).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 88).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 89).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 90).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 91).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 92).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 93).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 94).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 95).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 96).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 97).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 98).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 99).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 100).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 101).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 102).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 103).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 104).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 105).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 106).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 107).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 108).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 109).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 110).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 111).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 112).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 113).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 114).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 115).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 116).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 117).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 118).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 119).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 120).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 121).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 122).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 123).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 124).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 125).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 126).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 127).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 128).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 129).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 130).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 131).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 132).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 133).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 134).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 135).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 136).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 137).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 138).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 139).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 140).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 141).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File inputs/aesbuffer.sdc, Line 142).
+
+INFO (CTE): Reading of timing constraints file inputs/aesbuffer.sdc completed, with 22 Warnings and 118 Errors.
+[04/20 11:23:59     89s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=608.7M, current mem=608.7M)
+[04/20 11:23:59     89s] Current (total cpu=0:01:29, real=0:13:33, peak res=608.7M, current mem=608.7M)
+[04/20 11:23:59     89s] Creating Cell Server ...(0, 1, 1, 1)
+[04/20 11:23:59     89s] Summary for sequential cells identification: 
+[04/20 11:23:59     89s]   Identified SBFF number: 16
+[04/20 11:23:59     89s]   Identified MBFF number: 0
+[04/20 11:23:59     89s]   Identified SB Latch number: 0
+[04/20 11:23:59     89s]   Identified MB Latch number: 0
+[04/20 11:23:59     89s]   Not identified SBFF number: 0
+[04/20 11:23:59     89s]   Not identified MBFF number: 0
+[04/20 11:23:59     89s]   Not identified SB Latch number: 0
+[04/20 11:23:59     89s]   Not identified MB Latch number: 0
+[04/20 11:23:59     89s]   Number of sequential cells which are not FFs: 13
+[04/20 11:23:59     89s] Total number of combinational cells: 99
+[04/20 11:23:59     89s] Total number of sequential cells: 29
+[04/20 11:23:59     89s] Total number of tristate cells: 6
+[04/20 11:23:59     89s] Total number of level shifter cells: 0
+[04/20 11:23:59     89s] Total number of power gating cells: 0
+[04/20 11:23:59     89s] Total number of isolation cells: 0
+[04/20 11:23:59     89s] Total number of power switch cells: 0
+[04/20 11:23:59     89s] Total number of pulse generator cells: 0
+[04/20 11:23:59     89s] Total number of always on buffers: 0
+[04/20 11:23:59     89s] Total number of retention cells: 0
+[04/20 11:23:59     89s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[04/20 11:23:59     89s] Total number of usable buffers: 9
+[04/20 11:23:59     89s] List of unusable buffers:
+[04/20 11:23:59     89s] Total number of unusable buffers: 0
+[04/20 11:23:59     89s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[04/20 11:23:59     89s] Total number of usable inverters: 6
+[04/20 11:23:59     89s] List of unusable inverters:
+[04/20 11:23:59     89s] Total number of unusable inverters: 0
+[04/20 11:23:59     89s] List of identified usable delay cells:
+[04/20 11:23:59     89s] Total number of identified usable delay cells: 0
+[04/20 11:23:59     89s] List of identified unusable delay cells:
+[04/20 11:23:59     89s] Total number of identified unusable delay cells: 0
+[04/20 11:23:59     89s] Creating Cell Server, finished. 
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/20 11:23:59     89s] Deleting Cell Server ...
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] *** Summary of all messages that are not suppressed in this session:
+[04/20 11:23:59     89s] Severity  ID               Count  Summary                                  
+[04/20 11:23:59     89s] WARNING   IMPVL-346            2  Module '%s' is instantiated in the netli...
+[04/20 11:23:59     89s] WARNING   IMPDB-2504           2  Cell '%s' is instantiated in the Verilog...
+[04/20 11:23:59     89s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/20 11:23:59     89s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/20 11:23:59     89s] WARNING   TCLCMD-513          20  The software could not find a matching o...
+[04/20 11:23:59     89s] ERROR     TCLCMD-917          20  Cannot find '%s' that match '%s'         
+[04/20 11:23:59     89s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/20 11:23:59     89s] ERROR     TCLNL-312           98  %s: Invalid list of pins: '%s'           
+[04/20 11:23:59     89s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/20 11:23:59     89s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/20 11:23:59     89s] *** Message Summary: 46 warning(s), 120 error(s)
+[04/20 11:23:59     89s] 
+[04/20 11:23:59     89s] <CMD> set defOutLefVia 1
+[04/20 11:23:59     89s] <CMD> set lefDefOutVersion 5.5
+[04/20 11:23:59     89s] <CMD> floorPlan -su 1 0.70 4 4 4 4
+[04/20 11:23:59     89s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/20 11:23:59     89s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/20 11:23:59     89s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/20 11:23:59     89s] <CMD> editPin -fixedPin 1 -snap TRACK -side Top -unit TRACK -layer 2 -spreadType center -spacing 5.0 -pin {resetn clk {addr_in[0]} {addr_in[1]} {addr_in[2]} {addr_in[3]} {addr_in[4]} {addr_in[5]} {addr_in[6]} {addr_in[7]} {addr_in[8]} {addr_in[9]} {addr_in[10]} {addr_in[11]} {addr_in[12]} {addr_in[13]} {addr_in[14]} {addr_in[15]} {addr_in[16]} {addr_in[17]} {addr_in[18]} {addr_in[19]} {addr_in[20]} {addr_in[21]} {addr_in[22]} {addr_in[23]} {addr_in[24]} {addr_in[25]} {addr_in[26]} {addr_in[27]} {addr_in[28]} {addr_in[29]} {addr_in[30]} {addr_in[31]} mr mw {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} {data_in[4]} {data_in[5]} {data_in[6]} {data_in[7]} {data_in[8]} {data_in[9]} {data_in[10]} {data_in[11]} {data_in[12]} {data_in[13]} {data_in[14]} {data_in[15]} {data_in[16]} {data_in[17]} {data_in[18]} {data_in[19]} {data_in[20]} {data_in[21]} {data_in[22]} {data_in[23]} {data_in[24]} {data_in[25]} {data_in[26]} {data_in[27]} {data_in[28]} {data_in[29]} {data_in[30]} {data_in[31]} }
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[0] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[1] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[2] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[3] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[4] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[5] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[6] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[7] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[8] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[9] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[10] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[11] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[12] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[13] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[14] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[15] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[16] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[17] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[18] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin addr_in[19] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (EMS-27):	Message (IMPPTN-1235) has exceeded the current message display limit of 20.
+[04/20 11:23:59     89s] To increase the message display limit, refer to the product command reference manual.
+[04/20 11:23:59     89s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[04/20 11:23:59     89s] Successfully spread [2] pins.
+[04/20 11:23:59     89s] editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 809.1M).
+[04/20 11:23:59     89s] <CMD> editPin -fixedPin 1 -snap TRACK -side Right -use TIELOW -unit TRACK -layer 2 -spreadType center -spacing 10.0 -pin {{data_out[0]} {data_out[1]} {data_out[2]} {data_out[3]} {data_out[4]} {data_out[5]} {data_out[6]} {data_out[7]} {data_out[8]} {data_out[9]} {data_out[10]} {data_out[11]} {data_out[12]} {data_out[13]} {data_out[14]} {data_out[15]} {data_out[16]} {data_out[17]} {data_out[18]} {data_out[19]} {data_out[20]} {data_out[21]} {data_out[22]} {data_out[23]} {data_out[24]} {data_out[25]} {data_out[26]} {data_out[27]} {data_out[28]} {data_out[29]} {data_out[30]} {data_out[31]}}
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[0] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[1] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[2] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[3] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[4] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[5] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[6] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[7] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[8] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[9] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[10] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[11] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[12] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[13] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[14] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[15] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[16] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[17] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[18] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (IMPPTN-1235):	Cannot find pin data_out[19] on partition ensc450
+[04/20 11:23:59     89s] **WARN: (EMS-27):	Message (IMPPTN-1235) has exceeded the current message display limit of 20.
+[04/20 11:23:59     89s] To increase the message display limit, refer to the product command reference manual.
+[04/20 11:23:59     89s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+
+[04/20 11:32:04    138s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[04/20 11:32:05    138s] Innovus terminated by user interrupt.
+[04/20 11:32:05    138s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Apr 20 11:32:05 2021
+  Total CPU time:     0:02:18
+  Total real time:    0:21:40
+  Peak memory (main): 640.01MB
+
+[04/20 11:32:05    138s] 
+[04/20 11:32:05    138s] *** Memory Usage v#1 (Current mem = 830.344M, initial mem = 259.465M) ***
+[04/20 11:32:05    138s] 
+[04/20 11:32:05    138s] *** Summary of all messages that are not suppressed in this session:
+[04/20 11:32:05    138s] Severity  ID               Count  Summary                                  
+[04/20 11:32:05    138s] WARNING   IMPPTN-1235         98  Cannot find pin %s on partition %s       
+[04/20 11:32:05    138s] ERROR     IMPPTN-963           1  Either specified pin name for the select...
+[04/20 11:32:05    138s] WARNING   IMPVL-346            2  Module '%s' is instantiated in the netli...
+[04/20 11:32:05    138s] WARNING   IMPDB-2504           2  Cell '%s' is instantiated in the Verilog...
+[04/20 11:32:05    138s] ERROR     IMPOAX-142           3  %s                                       
+[04/20 11:32:05    138s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/20 11:32:05    138s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/20 11:32:05    138s] WARNING   IMPUDM-33            2  Global variable "%s" is obsolete and wil...
+[04/20 11:32:05    138s] WARNING   TCLCMD-513          20  The software could not find a matching o...
+[04/20 11:32:05    138s] ERROR     TCLCMD-917          20  Cannot find '%s' that match '%s'         
+[04/20 11:32:05    138s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/20 11:32:05    138s] ERROR     TCLNL-312           98  %s: Invalid list of pins: '%s'           
+[04/20 11:32:05    138s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/20 11:32:05    138s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/20 11:32:05    138s] *** Message Summary: 146 warning(s), 124 error(s)
+[04/20 11:32:05    138s] 
+[04/20 11:32:05    138s] --- Ending "Innovus" (totcpu=0:02:19, real=0:21:39, mem=830.3M) ---

@@ -1,0 +1,65 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+Options:	
+Date:		Sun Apr 18 00:08:37 2021
+Host:		ensc-esil-01 (x86_64 w/Linux 3.10.0-1127.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz 8192KB)
+OS:		CentOS Linux release 7.8.2003 (Core)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libddbase_sh.so: undefined symbol: _ZTIN12OpenAccess_419oaVersionedObserverINS_12oaLibDefListELj1EEE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set enc_enable_print_mode_command_reset_options 1
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_original_verilog_files inputs/aesbuffer.ref.v
+<CMD> set init_pwr_net VDD
+<CMD> set init_top_cell aesbuffer
+<CMD> set init_verilog inputs/aesbuffer.ref.v
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1
+<CMD> set pegDetailResScaleFactor 1
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set soft_stack_size_limit 31
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+<CMD> set timing_enable_default_delay_arc 1
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Apr 18 00:44:53 2021
+  Total CPU time:     0:03:40
+  Total real time:    0:36:17
+  Peak memory (main): 421.81MB
+
+
+*** Memory Usage v#1 (Current mem = 581.168M, initial mem = 259.465M) ***
+*** Message Summary: 2 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:41, real=0:36:16, mem=581.2M) ---

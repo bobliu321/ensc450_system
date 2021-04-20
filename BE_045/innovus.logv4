@@ -1,0 +1,239 @@
+[04/18 00:59:40      0s] 
+[04/18 00:59:40      0s] Cadence Innovus(TM) Implementation System.
+[04/18 00:59:40      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/18 00:59:40      0s] 
+[04/18 00:59:40      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[04/18 00:59:40      0s] Options:	
+[04/18 00:59:40      0s] Date:		Sun Apr 18 00:59:40 2021
+[04/18 00:59:40      0s] Host:		ensc-esil-01 (x86_64 w/Linux 3.10.0-1127.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz 8192KB)
+[04/18 00:59:40      0s] OS:		CentOS Linux release 7.8.2003 (Core)
+[04/18 00:59:40      0s] 
+[04/18 00:59:40      0s] License:
+[04/18 00:59:41      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[04/18 00:59:41      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/18 00:59:43      0s] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libddbase_sh.so: undefined symbol: _ZTIN12OpenAccess_419oaVersionedObserverINS_12oaLibDefListELj1EEE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[04/18 00:59:57      9s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[04/18 00:59:57      9s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[04/18 00:59:57      9s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[04/18 00:59:57      9s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[04/18 00:59:57      9s] @(#)CDS: CPE v18.10-p005
+[04/18 00:59:57      9s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[04/18 00:59:57      9s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[04/18 00:59:57      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[04/18 00:59:57      9s] @(#)CDS: RCDB 11.13
+[04/18 00:59:57      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_14415_ensc-esil-01_escmc27_wYnRvM.
+
+[04/18 00:59:57      9s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[04/18 01:00:00     10s] 
+[04/18 01:00:00     10s] **INFO:  MMMC transition support version v31-84 
+[04/18 01:00:00     10s] 
+[04/18 01:00:00     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/18 01:00:00     10s] <CMD> suppressMessage ENCEXT-2799
+[04/18 01:00:00     10s] <CMD> win
+[04/18 01:00:25     12s] invalid command name "<CMD>"
+[04/18 01:03:01     27s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/18 01:03:01     27s] <CMD> suppressMessage ENCEXT-2799
+[04/18 01:03:01     27s] <CMD> win
+[04/18 01:03:01     27s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[04/18 01:03:01     27s] <CMD> set defHierChar /
+[04/18 01:03:01     27s] <CMD> set distributed_client_message_echo 1
+[04/18 01:03:01     27s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[04/18 01:03:01     27s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[04/18 01:03:01     27s] <CMD> set init_gnd_net VSS
+[04/18 01:03:01     27s] <CMD> set init_lef_file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef
+[04/18 01:03:01     27s] <CMD> set init_mmmc_file Default.view
+[04/18 01:03:01     27s] <CMD> set init_oa_search_lib {}
+[04/18 01:03:01     27s] <CMD> set init_original_verilog_files inputs/aesbuffer.ref.v
+[04/18 01:03:01     27s] <CMD> set init_pwr_net VDD
+[04/18 01:03:01     27s] <CMD> set init_top_cell aesbuffer
+[04/18 01:03:01     27s] <CMD> set init_verilog inputs/aesbuffer.ref.v
+[04/18 01:03:01     27s] <CMD> set latch_time_borrow_mode max_borrow
+[04/18 01:03:01     27s] <CMD> set pegDefaultResScaleFactor 1
+[04/18 01:03:01     27s] <CMD> set pegDetailResScaleFactor 1
+[04/18 01:03:01     27s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[04/18 01:03:01     27s] <CMD> set soft_stack_size_limit 31
+[04/18 01:03:01     27s] <CMD> suppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> suppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/18 01:03:01     27s] <CMD> suppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] **WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[04/18 01:03:01     27s] <CMD> suppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> unsuppressMessage -silent GLOBAL-100
+[04/18 01:03:01     27s] <CMD> set timing_enable_default_delay_arc 1
+[04/18 01:03:01     27s] <CMD> init_design
+[04/18 01:03:01     27s] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+#% Begin Load MMMC data ... (date=04/18 01:03:01, mem=414.7M)
+[04/18 01:03:01     27s] #% End Load MMMC data ... (date=04/18 01:03:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=414.9M, current mem=414.9M)
+[04/18 01:03:01     27s] 
+[04/18 01:03:01     27s] Loading LEF file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ...
+[04/18 01:03:01     27s] Set DBUPerIGU to M2 pitch 380.
+[04/18 01:03:01     27s] 
+[04/18 01:03:01     27s] viaInitial starts at Sun Apr 18 01:03:01 2021
+viaInitial ends at Sun Apr 18 01:03:01 2021
+Loading view definition file from Default.view
+[04/18 01:03:01     27s] Reading nangate45nm_ls timing library '/ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib' ...
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+[04/18 01:03:01     27s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/18 01:03:01     27s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[04/18 01:03:01     27s] *** End library_loading (cpu=0.00min, real=0.00min, mem=18.7M, fe_cpu=0.46min, fe_real=3.35min, fe_mem=591.5M) ***
+[04/18 01:03:01     27s] #% Begin Load netlist data ... (date=04/18 01:03:01, mem=428.7M)
+[04/18 01:03:01     27s] *** Begin netlist parsing (mem=591.5M) ***
+[04/18 01:03:01     27s] Created 134 new cells from 1 timing libraries.
+[04/18 01:03:01     27s] Reading netlist ...
+[04/18 01:03:01     27s] Backslashed names will retain backslash and a trailing blank character.
+[04/18 01:03:01     27s] Reading verilog netlist 'inputs/aesbuffer.ref.v'
+[04/18 01:03:01     27s] 
+[04/18 01:03:01     27s] *** Memory Usage v#1 (Current mem = 595.539M, initial mem = 251.465M) ***
+[04/18 01:03:01     27s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=595.5M) ***
+[04/18 01:03:01     27s] #% End Load netlist data ... (date=04/18 01:03:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=437.4M, current mem=437.4M)
+[04/18 01:03:01     27s] Set top cell to aesbuffer.
+[04/18 01:03:08     28s] Hooked 134 DB cells to tlib cells.
+[04/18 01:03:08     28s] Starting recursive module instantiation check.
+[04/18 01:03:08     28s] No recursion found.
+[04/18 01:03:08     28s] Building hierarchical netlist for Cell aesbuffer ...
+[04/18 01:03:08     28s] *** Netlist is unique.
+[04/18 01:03:08     28s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[04/18 01:03:08     28s] ** info: there are 136 modules.
+[04/18 01:03:08     28s] ** info: there are 13376 stdCell insts.
+[04/18 01:03:08     28s] 
+[04/18 01:03:08     28s] *** Memory Usage v#1 (Current mem = 638.465M, initial mem = 251.465M) ***
+[04/18 01:03:08     28s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/18 01:03:08     28s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/18 01:03:08     28s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/18 01:03:08     28s] Set Default Net Delay as 1000 ps.
+[04/18 01:03:08     28s] Set Default Net Load as 0.5 pF. 
+[04/18 01:03:08     28s] Set Default Input Pin Transition as 0.1 ps.
+[04/18 01:03:08     28s] Extraction setup Started 
+[04/18 01:03:08     28s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/18 01:03:08     28s] Reading Capacitance Table File /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl ...
+[04/18 01:03:08     28s] Cap table was created using Encounter 08.10-p004_1.
+[04/18 01:03:08     28s] Process name: master_techFreePDK45.
+[04/18 01:03:08     28s] Importing multi-corner RC tables ... 
+[04/18 01:03:08     28s] Summary of Active RC-Corners : 
+[04/18 01:03:08     28s]  
+[04/18 01:03:08     28s]  Analysis View: rgb_av
+[04/18 01:03:08     28s]     RC-Corner Name        : nangate45nm_caps
+[04/18 01:03:08     28s]     RC-Corner Index       : 0
+[04/18 01:03:08     28s]     RC-Corner Temperature : 125 Celsius
+[04/18 01:03:08     28s]     RC-Corner Cap Table   : '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl'
+[04/18 01:03:08     28s]     RC-Corner PreRoute Res Factor         : 1
+[04/18 01:03:08     28s]     RC-Corner PreRoute Cap Factor         : 1
+[04/18 01:03:08     28s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/18 01:03:08     28s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/18 01:03:08     28s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/18 01:03:08     28s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/18 01:03:08     28s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/18 01:03:08     28s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/18 01:03:08     28s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/18 01:03:08     28s] Updating RC grid for preRoute extraction ...
+[04/18 01:03:08     28s] Initializing multi-corner capacitance tables ... 
+[04/18 01:03:08     28s] Initializing multi-corner resistance tables ...
+[04/18 01:03:08     28s] *Info: initialize multi-corner CTS.
+[04/18 01:03:08     28s] Reading timing constraints file 'inputs/aesbuffer.sdc' ...
+[04/18 01:03:08     28s] Current (total cpu=0:00:28.3, real=0:03:28, peak res=572.7M, current mem=571.5M)
+[04/18 01:03:08     28s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/aesbuffer.sdc, Line 8).
+[04/18 01:03:08     28s] 
+[04/18 01:03:08     28s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File inputs/aesbuffer.sdc, Line 43).
+[04/18 01:03:08     28s] 
+[04/18 01:03:08     28s] INFO (CTE): Reading of timing constraints file inputs/aesbuffer.sdc completed, with 2 WARNING
+[04/18 01:03:08     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=610.6M, current mem=610.6M)
+[04/18 01:03:08     28s] Current (total cpu=0:00:28.4, real=0:03:28, peak res=610.6M, current mem=610.6M)
+[04/18 01:03:08     28s] Creating Cell Server ...(0, 1, 1, 1)
+[04/18 01:03:08     28s] Summary for sequential cells identification: 
+[04/18 01:03:08     28s]   Identified SBFF number: 16
+[04/18 01:03:08     28s]   Identified MBFF number: 0
+[04/18 01:03:08     28s]   Identified SB Latch number: 0
+[04/18 01:03:08     28s]   Identified MB Latch number: 0
+[04/18 01:03:08     28s]   Not identified SBFF number: 0
+[04/18 01:03:08     28s]   Not identified MBFF number: 0
+[04/18 01:03:08     28s]   Not identified SB Latch number: 0
+[04/18 01:03:08     28s]   Not identified MB Latch number: 0
+[04/18 01:03:08     28s]   Number of sequential cells which are not FFs: 13
+[04/18 01:03:08     28s] Total number of combinational cells: 99
+[04/18 01:03:08     28s] Total number of sequential cells: 29
+[04/18 01:03:08     28s] Total number of tristate cells: 6
+[04/18 01:03:08     28s] Total number of level shifter cells: 0
+[04/18 01:03:08     28s] Total number of power gating cells: 0
+[04/18 01:03:08     28s] Total number of isolation cells: 0
+[04/18 01:03:08     28s] Total number of power switch cells: 0
+[04/18 01:03:08     28s] Total number of pulse generator cells: 0
+[04/18 01:03:08     28s] Total number of always on buffers: 0
+[04/18 01:03:08     28s] Total number of retention cells: 0
+[04/18 01:03:08     28s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[04/18 01:03:08     28s] Total number of usable buffers: 9
+[04/18 01:03:08     28s] List of unusable buffers:
+[04/18 01:03:08     28s] Total number of unusable buffers: 0
+[04/18 01:03:08     28s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[04/18 01:03:08     28s] Total number of usable inverters: 6
+[04/18 01:03:08     28s] List of unusable inverters:
+[04/18 01:03:08     28s] Total number of unusable inverters: 0
+[04/18 01:03:08     28s] List of identified usable delay cells:
+[04/18 01:03:08     28s] Total number of identified usable delay cells: 0
+[04/18 01:03:08     28s] List of identified unusable delay cells:
+[04/18 01:03:08     28s] Total number of identified unusable delay cells: 0
+[04/18 01:03:08     28s] Creating Cell Server, finished. 
+[04/18 01:03:08     28s] 
+[04/18 01:03:08     28s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/18 01:03:08     28s] Deleting Cell Server ...
+[04/18 01:03:08     28s] 
+[04/18 01:03:08     28s] *** Summary of all messages that are not suppressed in this session:
+[04/18 01:03:08     28s] Severity  ID               Count  Summary                                  
+[04/18 01:03:08     28s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/18 01:03:08     28s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/18 01:03:08     28s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/18 01:03:08     28s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/18 01:03:08     28s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/18 01:03:08     28s] *** Message Summary: 22 warning(s), 2 error(s)
+[04/18 01:03:08     28s] 
+[04/18 01:03:40     30s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Apr 18 01:03:40 2021
+  Total CPU time:     0:00:31
+  Total real time:    0:04:01
+  Peak memory (main): 629.77MB
+
+[04/18 01:03:40     30s] 
+[04/18 01:03:40     30s] *** Memory Usage v#1 (Current mem = 819.035M, initial mem = 251.465M) ***
+[04/18 01:03:40     30s] 
+[04/18 01:03:40     30s] *** Summary of all messages that are not suppressed in this session:
+[04/18 01:03:40     30s] Severity  ID               Count  Summary                                  
+[04/18 01:03:40     30s] ERROR     IMPOAX-142           3  %s                                       
+[04/18 01:03:40     30s] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[04/18 01:03:40     30s] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[04/18 01:03:40     30s] WARNING   IMPUDM-33            2  Global variable "%s" is obsolete and wil...
+[04/18 01:03:40     30s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/18 01:03:40     30s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[04/18 01:03:40     30s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[04/18 01:03:40     30s] *** Message Summary: 24 warning(s), 5 error(s)
+[04/18 01:03:40     30s] 
+[04/18 01:03:40     30s] --- Ending "Innovus" (totcpu=0:00:30.9, real=0:04:00, mem=819.0M) ---

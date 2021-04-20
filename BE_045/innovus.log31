@@ -1,0 +1,520 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+Options:	
+Date:		Mon Apr 19 23:00:27 2021
+Host:		ensc-esil-01 (x86_64 w/Linux 3.10.0-1127.el7.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz 8192KB)
+OS:		CentOS Linux release 7.8.2003 (Core)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libddbase_sh.so: undefined symbol: _ZTIN12OpenAccess_419oaVersionedObserverINS_12oaLibDefListELj1EEE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /Lnx_STC/tools/cadence/INNOVUS18.10.000_lnx86/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set enc_enable_print_mode_command_reset_options 1
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ../syn_045/lib/aesbuffer.lef ../vhdl/SRAM_Lib/SRAM.lef}
+<CMD> set init_mmmc_file ensc450.view
+<CMD> set init_pwr_net VDD
+<CMD> set init_top_cell ensc450
+<CMD> set init_verilog inputs/ensc450.ref.v
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1
+<CMD> set pegDetailResScaleFactor 1
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set soft_stack_size_limit 31
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+**WARN: (IMPUDM-33):	Global variable "timing_enable_default_delay_arc" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+<CMD> suppressMessage -silent GLOBAL-100
+<CMD> unsuppressMessage -silent GLOBAL-100
+<CMD> set timing_enable_default_delay_arc 1
+<CMD> init_design
+**ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+#% Begin Load MMMC data ... (date=04/19 23:00:55, mem=412.4M)
+#% End Load MMMC data ... (date=04/19 23:00:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=412.5M, current mem=412.5M)
+nangate45nm_caps
+
+Loading LEF file /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+Loading LEF file ../syn_045/lib/aesbuffer.lef ...
+
+Loading LEF file ../vhdl/SRAM_Lib/SRAM.lef ...
+
+viaInitial starts at Mon Apr 19 23:00:55 2021
+viaInitial ends at Mon Apr 19 23:00:55 2021
+Loading view definition file from ensc450.view
+Reading nangate45nm_ls timing library '/ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /ensc/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 134 cells in library 'NangateOpenCellLibrary' 
+Reading nangate45nm_ls timing library '/local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/AES_Lib/aesbuffer_slow.lib' ...
+Read 1 cells in library 'aesbuffer' 
+Reading nangate45nm_ls timing library '/local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/SRAM_Lib/SRAM.lib' ...
+**WARN: (TECHLIB-1177):	'index_2' defined in 'lu_table_template' group should have at least '2' float values. This may lead to undesirable analysis results. (File /local-scratch/localhome/escmc27/ensc450/Project/ensc450_system/vhdl/SRAM_Lib/SRAM.lib, Line 37)
+Read 1 cells in library 'SRAM' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=18.0M, fe_cpu=0.19min, fe_real=0.47min, fe_mem=583.3M) ***
+#% Begin Load netlist data ... (date=04/19 23:00:55, mem=426.8M)
+*** Begin netlist parsing (mem=583.3M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'SRAM' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'SRAM' is defined in LEF but not in the timing library.
+Created 136 new cells from 3 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'inputs/ensc450.ref.v'
+
+*** Memory Usage v#1 (Current mem = 586.258M, initial mem = 251.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=586.3M) ***
+#% End Load netlist data ... (date=04/19 23:00:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=433.1M, current mem=433.1M)
+Set top cell to ensc450.
+Hooked 136 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell ensc450 ...
+*** Netlist is unique.
+** info: there are 151 modules.
+** info: there are 3079 stdCell insts.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 625.684M, initial mem = 251.465M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: master_techFreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: ensc450_av
+    RC-Corner Name        : nangate45nm_caps
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/captables/NCSU_FreePDK_45nm.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'inputs/ensc450.sdc' ...
+Current (total cpu=0:00:11.6, real=0:00:29.0, peak res=573.4M, current mem=573.3M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/ensc450.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File inputs/ensc450.sdc, Line 44).
+
+INFO (CTE): Reading of timing constraints file inputs/ensc450.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=612.3M, current mem=612.3M)
+Current (total cpu=0:00:11.6, real=0:00:29.0, peak res=612.3M, current mem=612.3M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+WARNING   TECHLIB-1177         1  'index_%d' defined in '%s' group should ...
+*** Message Summary: 25 warning(s), 2 error(s)
+
+<CMD> set defOutLefVia 1
+<CMD> set lefDefOutVersion 5.5
+<CMD> floorPlan -d 350 350 10 10 10 10
+**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 10.070000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 9.940000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 10.070000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 9.940000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> setPlaceMode -fp true
+<CMD> place_design
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+AAE DB initialization (MEM=842.832 CPU=0:00:00.1 REAL=0:00:00.0) 
+siFlow : Timing analysis mode is single, using late cdB files
+
+*summary: 39 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.3) ***
+Deleted 0 physical inst  (cell - / prefix -).
+**WARN: (IMPSP-157):	Macro 'my_Mem' is not placed within core boundary.
+Type 'man IMPSP-157' for more detail.
+**WARN: (IMPSP-157):	Macro 'my_aes' is not placed within core boundary.
+Type 'man IMPSP-157' for more detail.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#1 (mem=862.9M)" ...
+No user-set net weight.
+Options: clkGateAware ignoreScan pinGuide congEffort=low gpeffort=fp 
+Scan chains were not defined.
+#std cell=3040 (0 fixed + 3040 movable) #block=2 (2 floating + 0 preplaced)
+#ioInst=0 #net=3516 #term=11439 #term/net=3.25, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=102
+stdCell: 3040 single + 0 double + 0 multi
+Total standard cell length = 3.8133 (mm), area = 0.0053 (mm^2)
+Estimated cell power/ground rail width = 0.175 um
+Average module density = 0.447.
+Density for the design = 0.447.
+       = (stdcell_area 20070 sites (5339 um^2) + block_area 162185 sites (43141 um^2)) / alloc_area 407960 sites (108517 um^2).
+Pin Density = 0.02804.
+            = total # of pins 11439 / total area 407960.
+=== lastAutoLevel = 9 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 8.709e+04 (3.34e+04 5.37e+04)
+              Est.  stn bbox = 9.174e+04 (3.48e+04 5.69e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 864.1M
+Iteration  2: Total net bbox = 8.709e+04 (3.34e+04 5.37e+04)
+              Est.  stn bbox = 9.174e+04 (3.48e+04 5.69e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 864.1M
+Iteration  3: Total net bbox = 7.440e+04 (3.12e+04 4.32e+04)
+              Est.  stn bbox = 7.877e+04 (3.27e+04 4.60e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 882.1M
+Iteration  4: Total net bbox = 3.416e+04 (1.35e+04 2.06e+04)
+              Est.  stn bbox = 3.754e+04 (1.49e+04 2.27e+04)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 882.1M
+Iteration  5: Total net bbox = 3.760e+04 (1.67e+04 2.09e+04)
+              Est.  stn bbox = 4.178e+04 (1.86e+04 2.32e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 882.1M
+Iteration  6: Total net bbox = 4.413e+04 (1.95e+04 2.46e+04)
+              Est.  stn bbox = 5.099e+04 (2.24e+04 2.85e+04)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 874.1M
+Iteration  7: Total net bbox = 8.452e+04 (4.03e+04 4.42e+04)
+              Est.  stn bbox = 9.225e+04 (4.35e+04 4.87e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+Iteration  8: Total net bbox = 8.452e+04 (4.03e+04 4.42e+04)
+              Est.  stn bbox = 9.225e+04 (4.35e+04 4.87e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+Iteration  9: Total net bbox = 8.686e+04 (4.17e+04 4.52e+04)
+              Est.  stn bbox = 9.633e+04 (4.63e+04 5.01e+04)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 874.1M
+Iteration 10: Total net bbox = 8.686e+04 (4.17e+04 4.52e+04)
+              Est.  stn bbox = 9.633e+04 (4.63e+04 5.01e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+Iteration 11: Total net bbox = 8.809e+04 (4.32e+04 4.49e+04)
+              Est.  stn bbox = 9.760e+04 (4.78e+04 4.98e+04)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 874.1M
+Iteration 12: Total net bbox = 8.809e+04 (4.32e+04 4.49e+04)
+              Est.  stn bbox = 9.760e+04 (4.78e+04 4.98e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+Iteration 13: Total net bbox = 7.316e+04 (3.86e+04 3.46e+04)
+              Est.  stn bbox = 8.232e+04 (4.35e+04 3.88e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+*** cost = 7.316e+04 (3.86e+04 3.46e+04) (cpu for global=0:00:02.1) real=0:00:03.0***
+net ignore based on current view = 0
+Solver runtime cpu: 0:00:01.7 real: 0:00:01.7
+Core Placement runtime cpu: 0:00:02.0 real: 0:00:03.0
+*** End of Placement (cpu=0:00:02.2, real=0:00:03.0, mem=874.1M) ***
+Some Macros are marked as preplaced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 3, real = 0: 0: 3, mem = 865.1M **
+INFO: Finished place_design in floorplan mode - no legalization done.
+
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-157            2  Macro '%s' is not placed within core bou...
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+*** Message Summary: 3 warning(s), 0 error(s)
+
+<CMD> selectInst my_aes
+<CMD> setObjFPlanBox Instance my_aes 24.585 163.3855 192.735 331.1055
+<CMD> setObjFPlanBox Instance my_aes 20.2775 161.539 188.4275 329.259
+<CMD> deselectAll
+<CMD> selectInst my_Mem
+<CMD> uiSetTool move
+<CMD> setObjFPlanBox Instance my_Mem 21.0735 20.0955 143.0735 142.0955
+<CMD> addHaloToBlock {0.05 0.05 0.05 0.05} -fromInstBox -allMacro
+<CMD> setPlaceMode -fp true
+<CMD> place_design
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#1 (mem=874.9M)" ...
+No user-set net weight.
+Options: clkGateAware ignoreScan pinGuide congEffort=low gpeffort=fp 
+Scan chains were not defined.
+#std cell=3040 (0 fixed + 3040 movable) #block=2 (0 floating + 2 preplaced)
+#ioInst=0 #net=3516 #term=11439 #term/net=3.25, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=102
+stdCell: 3040 single + 0 double + 0 multi
+Total standard cell length = 3.8133 (mm), area = 0.0053 (mm^2)
+Average module density = 0.086.
+Density for the design = 0.086.
+       = stdcell_area 20070 sites (5339 um^2) / alloc_area 234323 sites (62330 um^2).
+Pin Density = 0.02804.
+            = total # of pins 11439 / total area 407960.
+=== lastAutoLevel = 9 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 4.570e+04 (3.82e+04 7.52e+03)
+              Est.  stn bbox = 4.795e+04 (4.02e+04 7.75e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 869.1M
+Iteration  2: Total net bbox = 4.570e+04 (3.82e+04 7.52e+03)
+              Est.  stn bbox = 4.795e+04 (4.02e+04 7.75e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 869.1M
+Iteration  3: Total net bbox = 1.682e+04 (9.61e+03 7.21e+03)
+              Est.  stn bbox = 1.786e+04 (1.03e+04 7.55e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 869.1M
+Iteration  4: Total net bbox = 2.584e+04 (1.72e+04 8.66e+03)
+              Est.  stn bbox = 2.785e+04 (1.87e+04 9.18e+03)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 869.1M
+Iteration  5: Total net bbox = 3.705e+04 (2.36e+04 1.35e+04)
+              Est.  stn bbox = 4.116e+04 (2.64e+04 1.47e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 869.1M
+Iteration  6: Total net bbox = 4.459e+04 (2.51e+04 1.95e+04)
+              Est.  stn bbox = 5.248e+04 (2.94e+04 2.31e+04)
+              cpu = 0:00:00.4 real = 0:00:01.0 mem = 869.1M
+Iteration  7: Total net bbox = 7.730e+04 (4.30e+04 3.43e+04)
+              Est.  stn bbox = 8.591e+04 (4.77e+04 3.82e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 869.1M
+Iteration  8: Total net bbox = 7.730e+04 (4.30e+04 3.43e+04)
+              Est.  stn bbox = 8.591e+04 (4.77e+04 3.82e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 869.1M
+Iteration  9: Total net bbox = 7.829e+04 (4.36e+04 3.47e+04)
+              Est.  stn bbox = 8.741e+04 (4.88e+04 3.86e+04)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 869.1M
+Iteration 10: Total net bbox = 7.829e+04 (4.36e+04 3.47e+04)
+              Est.  stn bbox = 8.741e+04 (4.88e+04 3.86e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 869.1M
+Iteration 11: Total net bbox = 7.989e+04 (4.37e+04 3.62e+04)
+              Est.  stn bbox = 8.918e+04 (4.89e+04 4.03e+04)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 870.1M
+Iteration 12: Total net bbox = 7.989e+04 (4.37e+04 3.62e+04)
+              Est.  stn bbox = 8.918e+04 (4.89e+04 4.03e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 870.1M
+Iteration 13: Total net bbox = 8.101e+04 (4.42e+04 3.68e+04)
+              Est.  stn bbox = 9.029e+04 (4.95e+04 4.08e+04)
+              cpu = 0:00:00.4 real = 0:00:01.0 mem = 874.1M
+Iteration 14: Total net bbox = 8.101e+04 (4.42e+04 3.68e+04)
+              Est.  stn bbox = 9.029e+04 (4.95e+04 4.08e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 874.1M
+*** cost = 8.101e+04 (4.42e+04 3.68e+04) (cpu for global=0:00:02.2) real=0:00:02.0***
+Solver runtime cpu: 0:00:01.9 real: 0:00:01.9
+Core Placement runtime cpu: 0:00:02.2 real: 0:00:02.0
+*** End of Placement (cpu=0:00:02.3, real=0:00:02.0, mem=874.1M) ***
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 2, real = 0: 0: 3, mem = 867.4M **
+INFO: Finished place_design in floorplan mode - no legalization done.
+
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> editPin -fixedPin 1 -snap TRACK -side Top -unit TRACK -layer 2 -spreadType center -spacing 5.0 -pin {resetn clk {EXT_ADDRBUS[0]} {EXT_ADDRBUS[1]} {EXT_ADDRBUS[2]} {EXT_ADDRBUS[3]} {EXT_ADDRBUS[4]} {EXT_ADDRBUS[5]} {EXT_ADDRBUS[6]} {EXT_ADDRBUS[7]} {EXT_ADDRBUS[8]} {EXT_ADDRBUS[9]} {EXT_ADDRBUS[10]} {EXT_ADDRBUS[11]} {EXT_ADDRBUS[12]} {EXT_ADDRBUS[13]} {EXT_ADDRBUS[14]} {EXT_ADDRBUS[15]} {EXT_ADDRBUS[16]} {EXT_ADDRBUS[17]} {EXT_ADDRBUS[18]} {EXT_ADDRBUS[19]} {EXT_ADDRBUS[20]} {EXT_ADDRBUS[21]} {EXT_ADDRBUS[22]} {EXT_ADDRBUS[23]} {EXT_ADDRBUS[24]} {EXT_ADDRBUS[25]} {EXT_ADDRBUS[26]} {EXT_ADDRBUS[27]} {EXT_ADDRBUS[28]} {EXT_ADDRBUS[29]} {EXT_ADDRBUS[30]} {EXT_ADDRBUS[31]} EXT_MR EXT_MW {EXT_WDATABUS[0]} {EXT_WDATABUS[1]} {EXT_WDATABUS[2]} {EXT_WDATABUS[3]} {EXT_WDATABUS[4]} {EXT_WDATABUS[5]} {EXT_WDATABUS[6]} {EXT_WDATABUS[7]} {EXT_WDATABUS[8]} {EXT_WDATABUS[9]} {EXT_WDATABUS[10]} {EXT_WDATABUS[11]} {EXT_WDATABUS[12]} {EXT_WDATABUS[13]} {EXT_WDATABUS[14]} {EXT_WDATABUS[15]} {EXT_WDATABUS[16]} {EXT_WDATABUS[17]} {EXT_WDATABUS[18]} {EXT_WDATABUS[19]} {EXT_WDATABUS[20]} {EXT_WDATABUS[21]} {EXT_WDATABUS[22]} {EXT_WDATABUS[23]} {EXT_WDATABUS[24]} {EXT_WDATABUS[25]} {EXT_WDATABUS[26]} {EXT_WDATABUS[27]} {EXT_WDATABUS[28]} {EXT_WDATABUS[29]} {EXT_WDATABUS[30]} {EXT_WDATABUS[31]} EXT_BUSY}
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [69] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 875.4M).
+<CMD> editPin -fixedPin 1 -snap TRACK -side Right -use TIELOW -unit TRACK -layer 2 -spreadType center -spacing 10.0 -pin {EXT_NREADY {EXT_RDATABUS[0]} {EXT_RDATABUS[1]} {EXT_RDATABUS[2]} {EXT_RDATABUS[3]} {EXT_RDATABUS[4]} {EXT_RDATABUS[5]} {EXT_RDATABUS[6]} {EXT_RDATABUS[7]} {EXT_RDATABUS[8]} {EXT_RDATABUS[9]} {EXT_RDATABUS[10]} {EXT_RDATABUS[11]} {EXT_RDATABUS[12]} {EXT_RDATABUS[13]} {EXT_RDATABUS[14]} {EXT_RDATABUS[15]} {EXT_RDATABUS[16]} {EXT_RDATABUS[17]} {EXT_RDATABUS[18]} {EXT_RDATABUS[19]} {EXT_RDATABUS[20]} {EXT_RDATABUS[21]} {EXT_RDATABUS[22]} {EXT_RDATABUS[23]} {EXT_RDATABUS[24]} {EXT_RDATABUS[25]} {EXT_RDATABUS[26]} {EXT_RDATABUS[27]} {EXT_RDATABUS[28]} {EXT_RDATABUS[29]} {EXT_RDATABUS[30]} {EXT_RDATABUS[31]}}
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [33] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 876.4M).
+<CMD> addRing -nets {VDD VSS} -width 0.6 -spacing 0.5 -layer {top 7 bottom 7 left 6 right 6}
+#% Begin addRing (date=04/19 23:01:02, mem=656.9M)
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal6 |        4       |       NA       |
+|  via6  |        8       |        0       |
+| metal7 |        4       |       NA       |
++--------+----------------+----------------+
+#% End addRing (date=04/19 23:01:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=658.5M, current mem=658.5M)
+<CMD> addStripe -nets {VSS VDD} -layer 6 -direction vertical -width 0.8 -spacing 5.0 -set_to_set_distance 20
+#% Begin addStripe (date=04/19 23:01:02, mem=658.5M)
+
+**WARN: (IMPPP-133):	The block boundary of instance 'I_1' was increased to (128.950 145.840) (129.525 147.240) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'I_0' was increased to (129.555 145.770) (130.130 147.175) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][0]' was increased to (138.455 152.170) (141.690 153.575) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][1]' was increased to (146.590 153.475) (149.825 154.880) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][2]' was increased to (138.290 156.065) (141.525 157.470) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][0]' was increased to (146.825 152.265) (150.060 153.670) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][1]' was increased to (139.430 159.515) (142.665 160.920) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][0]' was increased to (135.900 160.380) (139.135 161.785) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][1]' was increased to (141.960 153.500) (145.195 154.905) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U3' was increased to (163.230 153.810) (164.185 155.215) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U4' was increased to (163.145 157.195) (164.100 158.600) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U5' was increased to (162.685 155.240) (163.640 156.640) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U6' was increased to (162.865 153.960) (163.820 155.365) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U7' was increased to (162.705 155.275) (163.655 156.680) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U8' was increased to (162.860 153.965) (163.815 155.370) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U9' was increased to (163.055 157.110) (164.010 158.515) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U10' was increased to (163.225 153.815) (164.180 155.220) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U17' was increased to (134.640 157.085) (135.595 158.490) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U18' was increased to (133.315 153.850) (134.270 155.255) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U21' was increased to (113.150 160.885) (114.865 162.290) because pins or obstructions were outside the original block boundary.
+**WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 50 wires.
+ViaGen created 68 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal6 |       50       |       NA       |
+|  via6  |       68       |        0       |
++--------+----------------+----------------+
+#% End addStripe (date=04/19 23:01:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=659.9M, current mem=659.9M)
+<CMD> addStripe -nets {VSS VDD} -layer 7 -direction horizontal -width 0.8 -spacing 5.0 -set_to_set_distance 20
+#% Begin addStripe (date=04/19 23:01:02, mem=659.9M)
+
+**WARN: (IMPPP-133):	The block boundary of instance 'I_1' was increased to (128.950 145.840) (129.525 147.240) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'I_0' was increased to (129.555 145.770) (130.130 147.175) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][0]' was increased to (138.455 152.170) (141.690 153.575) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][1]' was increased to (146.590 153.475) (149.825 154.880) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][2]' was increased to (138.290 156.065) (141.525 157.470) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[MASTER][0]' was increased to (146.825 152.265) (150.060 153.670) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][1]' was increased to (139.430 159.515) (142.665 160.920) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[SLAVE][0]' was increased to (135.900 160.380) (139.135 161.785) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/c2_op_reg[OP][1]' was increased to (141.960 153.500) (145.195 154.905) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U3' was increased to (163.230 153.810) (164.185 155.215) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U4' was increased to (163.145 157.195) (164.100 158.600) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U5' was increased to (162.685 155.240) (163.640 156.640) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U6' was increased to (162.865 153.960) (163.820 155.365) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U7' was increased to (162.705 155.275) (163.655 156.680) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U8' was increased to (162.860 153.965) (163.815 155.370) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U9' was increased to (163.055 157.110) (164.010 158.515) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U10' was increased to (163.225 153.815) (164.180 155.220) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U17' was increased to (134.640 157.085) (135.595 158.490) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U18' was increased to (133.315 153.850) (134.270 155.255) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'My_bus/U21' was increased to (113.150 160.885) (114.865 162.290) because pins or obstructions were outside the original block boundary.
+**WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -trim_antenna_max_distance  0.00
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 51 wires.
+ViaGen created 510 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  via6  |       510      |        0       |
+| metal7 |       51       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=04/19 23:01:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=660.0M, current mem=660.0M)
+<CMD> globalNetConnect -pin VDD -type pgpin -pin VDD -all
+
+Usage: globalNetConnect [-help] [<globalNetName>] [-all] [-autoTie] [-disconnect] [-hierarchicalInstance <string>]
+                        [-instanceBasename <string>] [-net <string>] [-netlistOverride] [-nonHierarchical] [-override] [-pin <string>]
+                        [-powerDomain <string>] [-region {x1 y1 x2 y2}] [-singleInstance <string>] [-type {pgpin tiehi tielo net}]
+                        [-verbose]
+
+**ERROR: (IMPTCM-44):	Argument "-pin" is already specified.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Apr 19 23:02:05 2021
+  Total CPU time:     0:00:22
+  Total real time:    0:01:40
+  Peak memory (main): 674.43MB
+
+
+*** Memory Usage v#1 (Current mem = 905.605M, initial mem = 251.465M) ***
+*** Message Summary: 6052 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:22.1, real=0:01:38, mem=905.6M) ---
